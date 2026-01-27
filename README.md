@@ -4,6 +4,8 @@ This repository explores symbolic reasoning over visual structures using **MeTTa
 
 The code is designed to run inside a **Dockerized Hyperon environment** to ensure reproducibility and avoid local dependency issues.
 
+For project information and updates, see https://mletonsa.github.io/symbolic-visual-structures-with-MeTTa/
+
 ---
 
 ## Requirements
