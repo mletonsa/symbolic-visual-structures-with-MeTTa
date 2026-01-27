@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello World in MeTTa"
+title: "Hello World MeTTa"
 date: 2026-01-27
 categories: research metta hyperon
 ---
