@@ -11,7 +11,9 @@ url: "https://mletonsa.github.io"
 
 # --- Build Settings ---
 markdown: kramdown
-theme: jekyll-theme-cayman
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
 future: true
 timezone: Asia/Ho_Chi_Minh
 
