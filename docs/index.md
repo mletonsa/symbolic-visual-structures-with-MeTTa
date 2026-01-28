@@ -5,7 +5,7 @@ title: Home
 
 # Project Updates
 
-Here are the latest research notes and updates for the **Pattern Discovery in Symbolic Visual Structures** project.
+Here are the latest research notes and updates for the [**Pattern Discovery in Symbolic Visual Structures**](https://deepfunding.ai/proposal/pattern-discovery-in-symbolic-visual-structures/) project.
 
 <ul>
   {% for post in site.posts %}
