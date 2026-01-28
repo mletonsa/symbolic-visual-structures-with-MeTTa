@@ -1,0 +1,21 @@
+# --- Site Settings ---
+title: Symbolic Visual Structures
+author: mletonsa
+email: mika.letonsaari@gmail.com
+description: >-
+  Research documentation for the "Pattern Discovery in Symbolic Visual Structures" project.
+
+# --- Technical Settings ---
+baseurl: "/symbolic-visual-structures-with-MeTTa"
+url: "https://mletonsa.github.io"
+
+# --- Build Settings ---
+markdown: kramdown
+theme: jekyll-theme-cayman
+future: true
+timezone: Asia/Ho_Chi_Minh
+
+# --- Plugins (Optional but recommended) ---
+plugins:
+  - jekyll-feed       # Creates an RSS feed for readers
+  - jekyll-seo-tag    # Helps Google understand your site
