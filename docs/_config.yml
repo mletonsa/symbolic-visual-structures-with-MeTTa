@@ -11,8 +11,8 @@ url: "https://mletonsa.github.io"
 
 # --- Build Settings ---
 markdown: kramdown
-#remote_theme: just-the-docs/just-the-docs
-remote_theme: minimal-mistakes/minimal-mistakes
+remote_theme: just-the-docs/just-the-docs
+#remote_theme: minimal-mistakes/minimal-mistakes
 plugins:
   - jekyll-remote-theme
 future: true
