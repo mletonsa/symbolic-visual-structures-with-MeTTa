@@ -1,17 +1,6 @@
----
-layout: default
-title: Home
----
+# Project introduction
 
-# Project Updates
 
-Here are the latest research notes and updates for the [**Pattern Discovery in Symbolic Visual Structures**](https://deepfunding.ai/proposal/pattern-discovery-in-symbolic-visual-structures/) project.
+![Description of the ARC task](pics/arc1.png)
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+![](pics/arc2.png)

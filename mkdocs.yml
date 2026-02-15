@@ -1,0 +1,18 @@
+site_name: Pattern Discovery Research
+theme:
+  name: material
+  features:
+    - navigation.tabs        # Top-level tabs for major sections
+    - navigation.sections    # Expands sections in sidebar
+    - search.highlight       # Highlights search terms (great for code)
+
+markdown_extensions:
+  - pymdownx.highlight:      # Better code block highlighting
+      anchor_linenums: true
+  - pymdownx.superfences     # Allows complex nesting
+  - admonition               # Allows "Note", "Warning" boxes
+
+nav:
+  - Home: index.md
+  - 'Research Log': log.md
+  - 'Concepts': concepts.md
