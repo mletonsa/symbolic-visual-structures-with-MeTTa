@@ -271,6 +271,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -287,6 +305,58 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing and Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -366,6 +436,47 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Implementation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing and Analysis
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -386,7 +497,7 @@
 <p>This project explores concept blending as a mechanism for abstract pattern discovery in symbolic visual structures, with a focus on tasks inspired by the ARC-AGI challenge. We implement an information-theoretic concept blending algorithm within the MeTTa language of the Hyperon framework, targeting the induction of reusable abstractions from small, discrete visual examples. Symbolic visual structures—such as shape groupings, spatial relations, and symmetry patterns—are represented as hypergraphs in the Atomspace. Blending operations generate higher-level concepts that generalize across tasks.</p>
 <p>Read the full project proposal from <a href="https://deepfunding.ai/proposal/pattern-discovery-in-symbolic-visual-structures/">Deep Funding website</a>.</p>
 <p>Contents:</p>
-<p>** Introduction **</p>
+<h2 id="introduction">Introduction</h2>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="intro/arcagi/">ARC-AGI</a></p>
 <ul>
 <li><a href="intro/arcagi1/">ARC-AGI-1</a> </li>
@@ -397,7 +508,7 @@
 </ul>
 <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="intro/metta/">Introduction to MeTTa</a></p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp; <a href="intro/resources/">Resources</a></p>
-<p>** Implementation **</p>
+<h2 id="implementation">Implementation</h2>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Design</p>
 <ul>
 <li><a href="encoding/encoding-philosophy/">Encoding: turning a grid into facts</a></li>
@@ -422,7 +533,7 @@
 <li><a href="implementation/testing3/">Testing the MeTTa side</a></li>
 <li><a href="implementation/testing4/">Corpora and held-out data</a></li>
 </ul>
-<p>** Testing and Analysis **</p>
+<h2 id="testing-and-analysis">Testing and  Analysis</h2>
 <ul>
 <li><a href="analysis/analysis1/">Scope and requirements mapping</a></li>
 <li><a href="analysis/analysis2/">Coverage of the relational vocabulary</a></li>
