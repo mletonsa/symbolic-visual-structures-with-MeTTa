@@ -1,0 +1,625 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>The Vocabulary: what the encoder says about a grid, and why - Pattern Discovery in Symbolic Visual Structures</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-vocabulary-what-the-encoder-says-about-a-grid-and-why" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-header__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pattern Discovery in Symbolic Visual Structures
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              The Vocabulary: what the encoder says about a grid, and why
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../log/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Research Log
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../concepts.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Concepts
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-nav__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pattern Discovery in Symbolic Visual Structures
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-rule-for-inclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The rule for inclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-three-layers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The three layers
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#note-about-predicate-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Note about predicate names
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#some-design-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Some design decisions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-missing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is missing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deciding-empirically-rather-than-by-intuition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deciding empirically rather than by intuition
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="the-vocabulary-what-the-encoder-says-about-a-grid-and-why">The Vocabulary: what the encoder says about a grid, and why</h1>
+<p>This is a design document that records why each predicate is
+in the vocabulary, which ones are not earning their place, and what is missing.
+The per-predicate reference belongs in the tutorial pages; this is the argument
+behind it.</p>
+<p>The context for the argument is that representational coverage, rather than
+search depth, appears to be the dominant limit on this kind of work.
+Independent analyses of DSL-based ARC solvers have found that on 229 of 400
+ARC-AGI-1 evaluation tasks the primitive library produces no valid transition
+from the input grid at all, a failure that is invariant to search budget.
+Our own D14 measurement is the same thing at group scale: 46 of 80
+InsideOutside grids carry containment structure, so 57.5% is the ceiling before
+any blending runs. Adding compute moves neither number. Adding vocabulary does.</p>
+<h2 id="the-rule-for-inclusion">The rule for inclusion</h2>
+<p>The research plan states it: every predicate must be used by at least one
+experiment or it gets cut. Three things follow that are worth making explicit.</p>
+<p><strong>A predicate must be reachable from candidate extraction.</strong> A fact that no
+candidate schema can mention is invisible to blending no matter how faithfully
+the encoder computes it. This is a stricter test than "an experiment uses it",
+and some of the current vocabulary fails it.</p>
+<p><strong>A predicate must discriminate.</strong> One that holds almost everywhere adds no
+information to a pattern and invites the coincidental-agreement problem D11
+documented, where two candidates agreeing on a near-universal value produced an
+over-narrow blend that matched nothing. Frequency of occurrence is a design
+input, not an afterthought.</p>
+<p><strong>A predicate should mean what it is called.</strong> Future readers apply the name,
+not the implementation. Two of ours currently do not, and both are documented
+below rather than renamed, which is a debt.</p>
+<h2 id="the-three-layers">The three layers</h2>
+<p><strong>Cells.</strong> <code>cell</code>, <code>coord</code>, <code>color</code>, <code>adj</code>. Complete and reversible: the grid
+can be rebuilt from these alone. Over 90% of atom volume on a full-size grid.
+Blending does not use them.</p>
+<p>They stay for two reasons. Object facts are derived from them, and inspection
+of surprising results starts here. The exported corpus drops them, which is why
+every exported grid carries an ASCII picture above its facts.</p>
+<p><strong>Object properties.</strong> <code>object</code>, <code>member</code>, <code>objColor</code>, <code>size</code>, <code>bbox</code>, <code>shape</code>,
+<code>holes</code>, <code>symmetric</code>. An object is a 4-connected same-coloured component over
+non-background cells, with background fixed at colour 0 (D1).</p>
+<p>This is where blending operates, and the reason is arithmetic. Pairwise
+relations are quadratic in object count, and a typical grid has ten to twenty
+objects against nine hundred cells. D2 records the failure case: one ARC-AGI-1
+task with 441 single-cell objects produced roughly 135,000 atoms from a single
+grid, which is why <code>max_pairwise_objects</code> caps the pairwise step at 60. That
+cap fires on 3.4% of ARC-AGI-1 grids and 0.1% of ConceptARC grids.</p>
+<p><strong>Object relations.</strong> <code>sameShape</code>, <code>sameColor</code>, <code>contains</code>, <code>alignedRow</code>,
+<code>alignedCol</code>. These are the anchors candidate extraction is built on (D7), so
+in practice this short list is the vocabulary that matters.</p>
+<p><strong>Grid level.</strong> <code>gridSymmetric</code>, plus <code>tooManyObjects</code> as a bookkeeping flag.</p>
+<h2 id="note-about-predicate-names">Note about predicate names</h2>
+<p><strong><code>contains</code> is bounding-box enclosure, not cell containment.</strong> An object whose
+bbox encloses another's contains it, even if their cells never nest. D13 fixed
+the direction bug that made this scan-order dependent, and the strictness
+clause means identical bboxes emit nothing, which never occurs in practice.</p>
+<p><strong><code>gridSymmetric</code> is not about the grid.</strong> It normalises the foreground to its
+own bounding box, so it reports whether the non-background cells form a
+symmetric shape in isolation, with position quotiented out. A symmetric shape
+parked off-centre still fires. It is also colour-blind. D13 measured the gap
+against the grid-frame reading: 29.1% of atoms across the three corpora are
+position-insensitive matches that grid-frame would reject, rising to 36.9% on
+ConceptARC.</p>
+<p><strong><code>alignedRow</code> means shared bbox edge</strong>, either top or bottom, so a single cell
+at the top-left aligns with a large block spanning several rows.</p>
+<p><strong><code>holes</code> counts against the object's own cells only</strong>, so a hole occupied by a
+nested object still counts. Defensible for InsideOutside and worth stating.</p>
+<h2 id="some-design-decisions">Some design decisions</h2>
+<p>The inclusion rule applies to what is already here. Two candidates:</p>
+<p><code>gridSymmetric</code> does not appear in <code>enumerate.py</code> at all, so it is unreachable
+from the Sprint B candidate schema and contributes nothing to any experiment
+run so far. It also fires on 3,396 of 6,604 grids, slightly over half, which is
+a high base rate for something anti-unification would treat as invariant. Both
+facts point the same way: it is either for the transformational experiment or
+it is cut.</p>
+<p><code>holes</code> and <code>member</code> should be checked the same way. A grep of <code>enumerate.py</code>
+and <code>scoring.py</code> for each predicate is a ten-minute exercise and would settle
+which of the current vocabulary is load-bearing and which is decoration.</p>
+<h2 id="what-is-missing">What is missing</h2>
+<p>Ordered by how much of ConceptARC they unlock relative to cost.</p>
+<p><strong>1. Directional ordering.</strong> There is no way to say one object is above,
+below, left of, or right of another. D7 records this concretely: InsideOutside
+was chosen over AboveBelow and Center precisely because <code>contains</code> already
+existed while those groups need predicates the vocabulary does not have. Two
+ConceptARC groups are named in our own notes as blocked on this, and the
+top/bottom groups are plausibly blocked too.</p>
+<p>This is cheap. Bounding-box comparison gives it, exactly like <code>alignedRow</code>,
+at no additional asymptotic cost since the pairwise loop already runs.</p>
+<p><strong>2. Transitive reach.</strong> <code>adj</code> says cells touch. Nothing says one cell is
+somewhere to the left of another at any distance. The 1D worked examples make
+the case: filling the gap between two marks is not expressible by any
+neighbourhood relation, however wide, because the gap can be as long as the
+row. The same shape covers extending to a boundary, gravity, and ray-casting,
+which is a real ARC family.</p>
+<p>Cost is the concern. Transitive closure is quadratic in cells, not objects, so
+on a 30x30 grid it is the same class of blowup D2 already had to cap. Object
+level is affordable; cell level needs a decision.</p>
+<p><strong>3. Grid size.</strong> No predicate records grid dimensions. A 5x5 grid and a 7x9
+grid containing the same shape at the same position produce byte-identical
+object-level atoms. Nothing in the current experiments needs this, since we ask
+what structure a grid has rather than rebuilding one. Anything producing an
+output grid needs it first, and ARC outputs frequently differ in size from
+their inputs. One atom per grid, effectively free.</p>
+<p>Note the tension with the pattern-frame decision: <code>gridSymmetric</code> deliberately
+discards position and size while <code>gridSize</code> records size. They answer different
+questions, and the vocabulary should say so rather than look inconsistent.</p>
+<p><strong>4. Centre and counting.</strong> D7 names a near-centre predicate as the other
+blocker for the Center group. Counting predicates (how many objects, how many
+of a colour) are an obvious family we have nothing for. Both are speculative
+until the coverage matrix below says otherwise.</p>
+<h2 id="deciding-empirically-rather-than-by-intuition">Deciding empirically rather than by intuition</h2>
+<p>The above is reasoning from four groups we happen to have looked at. The honest
+way to prioritise is to measure, and the tool exists.</p>
+<p>Running <code>check_group_relation_coverage.py</code> for each ConceptARC group against
+each of the five anchor relations produces a coverage matrix: which groups have
+structure the current vocabulary can express, and which come back empty. It is
+16 groups by 5 relations, it uses the encoder directly, and it takes minutes.</p>
+<p>Two things would come out of it. Groups with good coverage on some relation are
+candidates for extending the experimental suite beyond InsideOutside and
+SameDifferent, which currently carry every result we have. Groups that come
+back empty across all five relations are the empirical version of the argument
+above, and they say which predicate to add first with evidence rather than
+intuition.</p>
+<p>The input/output split matters here too. D14 found 85% of InsideOutside input
+grids carry containment against 30% of outputs, which explains an asymmetry
+visible in every sweep. Whether that holds across groups is worth knowing
+before it goes in the manuscript as a general property of the benchmark.</p>
+<p>Return to <a href="../../">Contents</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

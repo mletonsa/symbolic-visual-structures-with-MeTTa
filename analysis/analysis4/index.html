@@ -1,0 +1,661 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Analysis4 - Pattern Discovery in Symbolic Visual Structures</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analysis-4-novelty-and-human-evaluation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-header__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pattern Discovery in Symbolic Visual Structures
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Analysis4
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../log/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Research Log
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../concepts.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Concepts
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-nav__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pattern Discovery in Symbolic Visual Structures
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#41-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42-automated-novelty-verdict-validated-and-distributed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Automated novelty verdict, validated and distributed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43-a-degeneracy-the-automated-verdict-initially-missed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 A degeneracy the automated verdict initially missed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44-value-assessment-separates-two-distinct-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Value assessment separates two distinct failure modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45-summary-against-the-rfp-requirement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Summary against the RFP requirement
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a href="../../">Contents</a> · Previous: <a href="../analysis3/">Diversity-based pair selection</a> · Next: <a href="../analysis5/">Negative results and limitations</a></p>
+<h1 id="analysis-4-novelty-and-human-evaluation">Analysis, 4: Novelty and human evaluation</h1>
+<p>This section reports the results addressing the RFP's requirement for
+"algorithms to create novel concepts... evaluated for their novelty and
+coherence" and its requirement for "a qualitative evaluation framework...
+focusing on human assessment of novelty and logical consistency." Coherence
+evaluation is reported in Section 3. This section covers novelty and the
+human evaluation framework.</p>
+<h2 id="41-method">4.1 Method</h2>
+<p><strong>Automated novelty scoring.</strong> No concept library exists yet. The
+iterated library-learning loop described in the research plan is Milestone
+3 work. Without a library to compare against, novelty is assessed relative
+to the two references available at this stage, the base vocabulary's own
+primitive relations and the two parent candidates a blend was built from.
+<code>python/novelty.py</code> classifies a blend into one of three categories.
+<code>parent_echo</code> applies when the two parent candidates agree on every
+property, so nothing was generalized. <code>trivial</code> applies when nothing
+survives beyond the bare anchor relation. <code>novel</code> applies otherwise, with
+its result reported alongside the specific properties retained. A blend
+retaining a fixed scalar property, a colour or size that happened to match
+between the two parents, is reported separately from a blend retaining
+only a shared symmetry constraint, since decisions.md D11 found these carry
+different implications for held-out generalization.</p>
+<p><strong>Human evaluation.</strong> <code>docs/rating/rubric.md</code> defines three dimensions,
+each scored 1 to 3: novelty, whether the blend adds structure beyond
+existing primitives, logical consistency, whether the retained properties
+form one coherent claim rather than an arbitrary conjunction, and value,
+whether the concept would plausibly assist in representing or solving
+ARC-style tasks. 24 blends were sampled from InsideOutside/<code>contains</code>,
+stratified across the three automated verdict categories, and rated
+against this rubric. The automated verdict, coherence match count, and MDL
+gain for each blend were withheld until rating was complete.</p>
+<p>The rating exercise was assisted rather than fully independent. Cards were
+presented with structurally relevant facts drawn from the card's own
+content, such as which object in a symmetry claim was a single cell, and
+in two of the 24 cases the automated match count had been discussed prior
+to formal rating. This is reported as a first pass establishing the
+rubric's usability and the informativeness of comparing human and
+automated scores, rather than as a fully blinded study.</p>
+<h2 id="42-automated-novelty-verdict-validated-and-distributed">4.2 Automated novelty verdict, validated and distributed</h2>
+<p>The correspondence between <code>novelty.py</code>'s <code>parent_echo</code> verdict and
+<code>blend.metta</code>'s <code>isDegenerate</code> flag was checked against every valid
+same-relation cross-task pair in InsideOutside, 8,794 pairs. The two agreed
+on all 8,794.</p>
+<p>Table 6 reports the verdict distribution across the same 8,794 pairs, prior
+to the correction described in Section 4.3.</p>
+<p><strong>Table 6.</strong> Novelty verdict distribution, InsideOutside/<code>contains</code>, 8,794 pairs.</p>
+<table>
+<thead>
+<tr>
+<th>Verdict</th>
+<th>Count</th>
+<th>Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>parent_echo</code></td>
+<td>0</td>
+<td>0.0%</td>
+</tr>
+<tr>
+<td><code>trivial</code></td>
+<td>344</td>
+<td>3.9%</td>
+</tr>
+<tr>
+<td><code>novel</code>, symmetry content only</td>
+<td>3,513</td>
+<td>39.9%</td>
+</tr>
+<tr>
+<td><code>novel</code>, with a retained scalar property</td>
+<td>4,937</td>
+<td>56.1%</td>
+</tr>
+</tbody>
+</table>
+<p>Decisions.md D11 found that retaining a scalar property, the condition
+defining the fourth row of Table 6, predicts worse held-out generalization
+in a controlled comparison. That condition is also the single largest
+category in the full pair space. A blend that retains more content than
+the bare relation is not, on this evidence, more likely to generalize. It
+is more likely to be exactly the coincidental-agreement pattern D11
+identified.</p>
+<h2 id="43-a-degeneracy-the-automated-verdict-initially-missed">4.3 A degeneracy the automated verdict initially missed</h2>
+<p>Three of the 24 rated blends were scored automated-<code>novel</code> but rated
+human novelty 1, the rubric's lowest point, indicating no content beyond
+the bare relation. All three shared one property, the retained content was
+a single-cell object's size, shape, or full symmetry claim, each of which
+holds trivially for any single-cell object regardless of task or colour.
+This affected 3 of 16 automated-<code>novel</code> blends in the sample, 18.75%.</p>
+<p><code>novelty.py</code> was revised to discount this specific case, a fixed size or
+shape property equal to the canonical single-cell value, or a full
+six-axis symmetry claim where a contributing object has size one, when
+these are the only content a blend retains. Colour coincidences and
+partial symmetry claims, which carry no equivalent structural guarantee,
+are not discounted. The revised classifier was tested against a case
+retaining both a discounted single-cell property and a genuine, undiscounted
+property on the blend's other object, confirming the discount does not
+extend beyond the specific pattern identified.</p>
+<p>The revised classifier was then run against the same 8,794-pair space.
+1,661 of the 8,450 pairs previously classified <code>novel</code> were reclassified
+<code>trivial</code>, 19.66%. The 24-blend sample predicted 18.75%. The two figures
+differ by 0.91 percentage points, obtained from a sample roughly two
+orders of magnitude smaller than the population it predicted.</p>
+<h2 id="44-value-assessment-separates-two-distinct-failure-modes">4.4 Value assessment separates two distinct failure modes</h2>
+<p>Table 7 reports held-out coherence match rate grouped by the human value
+rating assigned to each blend.</p>
+<p><strong>Table 7.</strong> Coherence match rate by human value rating, 24 rated blends.</p>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>n</th>
+<th>Pooled match rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value 1, matches most held-out grids</td>
+<td>9</td>
+<td>48.3% (144/298)</td>
+</tr>
+<tr>
+<td>Value 1, matches almost no held-out grids</td>
+<td>2</td>
+<td>0.0% (0/66)</td>
+</tr>
+<tr>
+<td>Value 2</td>
+<td>13</td>
+<td>34.1% (152/446)</td>
+</tr>
+</tbody>
+</table>
+<p>Low value occurs at both extremes of match rate. A blend retaining no
+content beyond the bare relation matches nearly half of held-out grids,
+because it constrains nothing, and is rated low value for that reason. A
+blend retaining only the single-cell coincidence described in Section 4.3
+matches almost no held-out grids, because the coincidence rarely recurs,
+and is rated low value for the opposite reason. Two blends in the sample
+illustrate the distinction directly. Both retain an identical single-cell
+property on one object and match zero held-out grids. One additionally
+retains a genuine partial symmetry constraint on its other object and was
+rated value 2. The other retains nothing further and was rated value 1.
+Match rate alone does not separate these two blends. The retained content
+does.</p>
+<p>Human consistency ratings showed no comparable relationship to MDL
+acceptance. Mean consistency was 2.76 for blends with positive MDL gain
+and 2.67 for blends with negative gain. MDL gain is computed from match
+count and description length. Consistency, as defined in the rubric,
+concerns whether a blend's retained properties form one coherent claim.
+The rubric does not predict these should agree, and the results do not
+show them agreeing.</p>
+<p>No blend in the 24-blend sample was rated value 3. This may reflect the
+specific sample drawn, or a property of the two-object, single-relation
+candidate schema described in Section 1.1, which has limited room for the
+kind of multi-relation structure a reusable building block would need.
+This is not yet distinguished and is reported as an open question in
+Section 5.</p>
+<h2 id="45-summary-against-the-rfp-requirement">4.5 Summary against the RFP requirement</h2>
+<p>Novelty and coherence are both implemented and both evaluated
+quantitatively. The novelty classifier's principal limitation, failure to
+discount a specific structural coincidence, was identified through human
+evaluation, corrected, and the correction verified at full scale against
+independent evidence, the 19.66% reclassification rate against the
+sample's 18.75% prediction. The qualitative evaluation framework required
+by the RFP is implemented, applied, and shown in this instance to have
+identified a genuine defect in the automated criterion it was built to
+check.</p>
+<p>Next: <a href="../analysis5/">Negative results and limitations</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

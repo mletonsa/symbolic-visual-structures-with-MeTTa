@@ -1,0 +1,618 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Analysis1 - Pattern Discovery in Symbolic Visual Structures</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analysis-1-scope-and-requirements-mapping" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-header__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pattern Discovery in Symbolic Visual Structures
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Analysis1
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../log/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Research Log
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../concepts.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Concepts
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-nav__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pattern Discovery in Symbolic Visual Structures
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#11-the-blending-mechanism-relative-to-its-conceptual-basis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 The blending mechanism relative to its conceptual basis
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-rfp-functional-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 RFP functional requirements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-document-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Document structure
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a href="../../">Contents</a> · Next: <a href="../analysis2/">Coverage of the relational vocabulary</a></p>
+<h1 id="analysis-1-scope-and-requirements-mapping">Analysis, 1: Scope and requirements mapping</h1>
+<p>This document reports the results obtained during Milestone 2 and evaluates
+them against the functional requirements stated in the RFP. It is the third
+of three deliverables specified for this milestone: draft implementation,
+initial testing results, and analysis of the results. The implementation is
+described in <a href="../../implementation/pipeline1/">How the pipeline works</a>.
+Testing methodology and coverage are described in
+<a href="../../implementation/testing1/">How we know it works</a> and
+<a href="../../implementation/experiments1/">Running the experiments</a>. This document
+assumes familiarity with the vocabulary and pipeline stages described there
+and does not repeat their content.</p>
+<h2 id="11-the-blending-mechanism-relative-to-its-conceptual-basis">1.1 The blending mechanism relative to its conceptual basis</h2>
+<p>The project implements concept blending following the network model
+formalized by Goguen and Eppe, an operationalization of Fauconnier and
+Turner's conceptual blending theory. The model defines four spaces: two
+input spaces, a generic space computed from their shared structure, and a
+blend space formed by selective projection from the inputs. An optional
+completion step can surface emergent structure not present in either input
+alone. Table 1 maps each space to its implementation.</p>
+<p><strong>Table 1.</strong> Blending-network spaces mapped to implementation components.</p>
+<table>
+<thead>
+<tr>
+<th>Conceptual space</th>
+<th>Implementation</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input space</td>
+<td>A <code>Candidate</code>: one binary relation between two objects in a single grid, together with each object's colour, size, shape and symmetry properties</td>
+<td><code>enumerate.py</code>, Stage 1</td>
+</tr>
+<tr>
+<td>Generic space</td>
+<td>The result of anti-unifying two candidates. Each property slot where the candidates agree is retained as a ground value (<code>Fixed</code>); each slot where they disagree becomes a free variable (<code>Generalized</code>)</td>
+<td><code>antiunify.metta</code>, Stage 3</td>
+</tr>
+<tr>
+<td>Blend</td>
+<td>The generic space instantiated into a concrete MeTTa pattern. <code>Fixed</code> slots become literal values; <code>Generalized</code> slots become fresh variables</td>
+<td><code>blend.metta</code>, Stage 4</td>
+</tr>
+<tr>
+<td>Emergent structure</td>
+<td>Not implemented. Completion would run the representation's derivation rules over the blend's projected atoms to surface facts entailed by the combination but present in neither input</td>
+<td>decisions.md, D8</td>
+</tr>
+</tbody>
+</table>
+<p>Two properties of this implementation follow from the fixed schema chosen
+for the candidate representation (decisions.md, D7). First, because every
+candidate has the same slots in the same order, every element of one input
+space corresponds to an element of the other by construction. The general
+model allows an element from one input to project into the blend with no
+counterpart in the other input; this schema does not produce that case.
+Second, projection reduces to a fixed rule applied per slot, retain if the
+two inputs agree, generalize if they do not, rather than a selection
+process that could retain a disagreeing slot as ground by choosing one
+input's value over the other. Both properties are consequences of the
+schema restriction documented in D7, adopted to make a working MeTTa
+implementation tractable within the milestone timeline, and are reported
+here as scope rather than as limitations discovered after the fact.</p>
+<p>Coherence checking and information-theoretic scoring, named in the RFP's
+first functional requirement, are implemented independently of blend
+construction. Coherence is tested by matching the blend's pattern against
+held-out grid instances (<code>blend_pipeline.check_coherence</code>); this is the
+mechanism behind every sweep result reported in Section 3. Minimum
+description length scoring (<code>scoring.py</code>) implements the formula stated in
+the research plan,</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>DL(atom) = (arity + 1) * log2(|symbols|)
+</code></pre></div>
+<p>and computes the compression gain from adding a candidate blend to a
+concept library. Its properties and a documented limitation, that the
+formula does not distinguish a ground constant from a variable at the same
+argument position, are recorded in decisions.md D10.</p>
+<h2 id="12-rfp-functional-requirements">1.2 RFP functional requirements</h2>
+<p>The RFP states three Must Have requirements, two Should Have requirements,
+and two Could Have requirements applicable to this component of the work.
+Table 2 records the status of each against the current implementation.</p>
+<p><strong>Table 2.</strong> RFP functional requirements and their status at Milestone 2.</p>
+<table>
+<thead>
+<tr>
+<th>Requirement</th>
+<th>Priority</th>
+<th>Status</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Concept blending with an information-theoretic criterion, or uncertain FCA</td>
+<td>Must</td>
+<td>Met (blending path)</td>
+<td><code>scoring.py</code>; decisions.md D10</td>
+</tr>
+<tr>
+<td>Algorithms creating novel concepts, evaluated for novelty and coherence</td>
+<td>Must</td>
+<td>Met</td>
+<td>Coherence: <code>blend_pipeline.py</code>. Novelty: <code>novelty.py</code>, verified against MeTTa output on 8,794 pairs (D16), corrected after human evaluation (D17)</td>
+</tr>
+<tr>
+<td>Qualitative evaluation framework for creativity and value, human assessment of novelty and logical consistency</td>
+<td>Must</td>
+<td>Met</td>
+<td><code>docs/rating/rubric.md</code>; 24-blend rating exercise, D17</td>
+</tr>
+<tr>
+<td>Exploration of LLM-based evaluation</td>
+<td>Should</td>
+<td>Not implemented</td>
+<td>Scoped as a direct extension of the existing rating protocol; D17, action item 5</td>
+</tr>
+<tr>
+<td>Parallel testing of concept blending against uncertain FCA</td>
+<td>Should</td>
+<td>Not attempted</td>
+<td>The project committed to the concept blending path, which the Must Have requirement permits as an alternative to FCA</td>
+</tr>
+<tr>
+<td>Multi-agent LLM evaluation</td>
+<td>Could</td>
+<td>Not implemented</td>
+<td>Depends on the LLM-based evaluation extension above</td>
+</tr>
+<tr>
+<td>Information-theoretic refinement balancing novelty and coherence</td>
+<td>Could</td>
+<td>Partially met</td>
+<td>Novelty and MDL gain are computed per blend (D10, D16) but not yet combined into a single acceptance criterion; planned for the Milestone 3 library-learning loop</td>
+</tr>
+</tbody>
+</table>
+<p>All three Must Have requirements are met. Of the two Should Have
+requirements, one is not attempted because the project committed to a
+single evaluation path at proposal stage, and one is identified as a scoped
+extension of existing infrastructure rather than unaddressed work.</p>
+<h2 id="13-document-structure">1.3 Document structure</h2>
+<p>Section 2 reports coverage of the encoder's relational vocabulary across
+the ConceptARC benchmark and establishes the ceiling that bounds any
+subsequent match-rate result. Section 3 reports the diversity-based pair
+selection result and its replication across three concept groups and three
+anchor relations. Section 4 reports the novelty scoring and human
+evaluation results. Section 5 reports negative results, states limitations
+of the current implementation, and describes experiments planned for
+Milestone 3.</p>
+<p>Next: <a href="../analysis2/">Coverage of the relational vocabulary</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

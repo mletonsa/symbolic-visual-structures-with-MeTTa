@@ -1,0 +1,666 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Analysis3 - Pattern Discovery in Symbolic Visual Structures</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analysis-3-diversity-based-pair-selection" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-header__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pattern Discovery in Symbolic Visual Structures
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Analysis3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../log/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Research Log
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../concepts.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Concepts
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-nav__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pattern Discovery in Symbolic Visual Structures
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-results-across-three-groups-and-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Results across three groups and relations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#33-the-point-gain-from-diversity-selection-is-consistent-across-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 The point-gain from diversity selection is consistent across relations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#34-diverse-pair-selection-reaches-ceiling-exactly-for-copy-samecolor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Diverse-pair selection reaches ceiling exactly for Copy / sameColor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35-input-and-output-coverage-reverse-for-copy-relative-to-insideoutside" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Input and output coverage reverse for Copy relative to InsideOutside
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#36-interpretation-near-ceiling-performance-and-primitive-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Interpretation: near-ceiling performance and primitive recovery
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a href="../../">Contents</a> · Previous: <a href="../analysis2/">Coverage of the relational vocabulary</a> · Next: <a href="../analysis4/">Novelty and human evaluation</a></p>
+<h1 id="analysis-3-diversity-based-pair-selection">Analysis, 3: Diversity-based pair selection</h1>
+<h2 id="31-method">3.1 Method</h2>
+<p>Each sweep reported in this section follows a leave-one-out design over a
+set of usable tasks, tasks carrying the anchor relation in at least one
+grid. One task is held out. From the remaining tasks, every task pair
+contributes one candidate pair, selected from the two tasks' candidate
+pools by one of two strategies. The resulting blend is checked for
+coherence against every grid of the held-out task. This is repeated with
+each usable task held out in turn. The mechanism is described in full in
+<a href="../../implementation/pipeline1/">How the pipeline works</a> and
+<a href="../../implementation/experiments1/">Running the experiments</a>.</p>
+<p>Two pair selection strategies are compared. The baseline strategy takes the
+first candidate extracted from each of the two tasks' pools, with no
+further selection. The diverse-pair strategy, introduced in decisions.md
+D11, selects the pair minimizing the number of scalar property slots on
+which the two candidates coincidentally agree, computed without invoking
+MeTTa. D11 found this count predicts held-out match rate closely in a
+small controlled comparison. This section reports the result of applying
+both strategies at full sweep scale across three distinct groups and
+relations.</p>
+<h2 id="32-results-across-three-groups-and-relations">3.2 Results across three groups and relations</h2>
+<p>Table 5 reports the outcome for all three group and relation combinations
+tested to date. Ceiling is the ceiling established in Section 2.1,
+computed from the same held-out task set as the sweep. Where the ceiling
+was not computed for a given sweep, the cell is marked accordingly rather
+than left implying a value of 100%.</p>
+<p><strong>Table 5.</strong> Diversity-based pair selection results across three groups and relations.</p>
+<table>
+<thead>
+<tr>
+<th>Group / Relation</th>
+<th>Baseline</th>
+<th>Diverse-pair</th>
+<th>Ceiling</th>
+<th>Gain</th>
+<th>Baseline as % of ceiling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>InsideOutside / <code>contains</code></td>
+<td>31% (377/1200)</td>
+<td>54% (654/1200)</td>
+<td>57.5% (690/1200)</td>
+<td>+23 pts</td>
+<td>54.6%</td>
+</tr>
+<tr>
+<td>SameDifferent / <code>sameShape</code></td>
+<td>52% (187/360)</td>
+<td>77% (276/360)</td>
+<td>not computed</td>
+<td>+25 pts</td>
+<td>not computed</td>
+</tr>
+<tr>
+<td>Copy / <code>sameColor</code></td>
+<td>63.8% (199/312)</td>
+<td>84.6% (264/312)</td>
+<td>84.6% (264/312)</td>
+<td>+20.8 pts</td>
+<td>75.4%</td>
+</tr>
+</tbody>
+</table>
+<p>Sources: InsideOutside, decisions.md D9, D11, D14. SameDifferent, D10, D12.
+Copy, D18. All three sweeps reported zero degenerate blends, pairs whose
+two source candidates agreed on every property with nothing generalized.</p>
+<p>The InsideOutside sweep was re-run against the corrected encoder described
+in decisions.md D13 and returned counts identical to those reported in D11
+and D14. The figures in Table 5 reflect the current implementation.</p>
+<h2 id="33-the-point-gain-from-diversity-selection-is-consistent-across-relations">3.3 The point-gain from diversity selection is consistent across relations</h2>
+<p>The absolute gain in match rate from baseline to diverse-pair selection
+falls within a five-point band across all three tests: 23 points for
+<code>contains</code>, 25 points for <code>sameShape</code>, 20.8 points for <code>sameColor</code>. This
+consistency was not established by the first result alone. D11 validated
+the mechanism on one relation. D12 confirmed it on a second, structurally
+different relation. This section reports a third confirmation on a third
+relation, drawn from a different concept group and using a different
+anchor relation from the first two.</p>
+<p>The quantity that is not consistent across the three tests is how much of
+the gap to ceiling the baseline strategy leaves for diverse selection to
+close. InsideOutside's baseline reaches 54.6% of ceiling. Copy's baseline
+reaches 75.4% of ceiling. Decisions.md D11 attributes
+InsideOutside's low baseline performance to a specific structural property
+of the <code>contains</code> relation as encoded. Every single-cell object shares an
+identical shape signature and is symmetric under all six axes, a
+consequence of there being exactly one way to represent one cell,
+independent of task or colour. A first-candidate pairing is exposed to
+this coincidence whenever either candidate's contained object happens to
+be a single cell, and the resulting blend over-narrows on a property that
+carries no information. <code>sameColor</code> has no equivalent structural
+guarantee. Two arbitrary objects can share a colour, but this agreement
+is not structurally forced the way the single-cell shape signature is.
+The baseline strategy for <code>sameColor</code> is therefore exposed to ordinary
+variance rather than the same systematic trap, which accounts for its
+higher starting point relative to ceiling.</p>
+<h2 id="34-diverse-pair-selection-reaches-ceiling-exactly-for-copy-samecolor">3.4 Diverse-pair selection reaches ceiling exactly for Copy / <code>sameColor</code></h2>
+<p>The diverse-pair result for Copy, 126 of 156 input checks matched and 138
+of 156 output checks matched, equals the ceiling for the same five-task
+sample exactly rather than approximately. The ceiling is <code>6 x</code> the number
+of held-out grids carrying <code>sameColor</code> structure at all, six being the
+number of candidate pairs checked against each held-out task. 21 of 26
+input grids and 23 of 26 output grids in this sample carry the relation,
+giving <code>6 x 21 = 126</code> and <code>6 x 23 = 138</code>, both of which the diverse-pair
+sweep reached without exception.</p>
+<p>This follows from the relation's own structure rather than from a
+difference in how well the pipeline performs on the two relations. A
+maximally general <code>sameColor</code> blend places no constraint beyond the
+relation itself, and matches any grid containing any pair of
+same-coloured objects. Diverse selection converges on this maximally
+general blend for the same reason D11 established for <code>contains</code>,
+favouring the pair with the fewest coincidentally agreeing properties.</p>
+<p>An exact match to ceiling is not evidence that the blend captures
+anything beyond the bare <code>sameColor</code> relation. It is the clearest
+instance in this document of the mechanism addressed directly in Section
+3.6, that the selection strategy reliably recovers a primitive already
+present in the vocabulary. A perfect match rate here demonstrates that
+recovery with unusual precision. It does not demonstrate a discovery
+beyond it.</p>
+<h2 id="35-input-and-output-coverage-reverse-for-copy-relative-to-insideoutside">3.5 Input and output coverage reverse for Copy relative to InsideOutside</h2>
+<p>Every sweep prior to Copy showed higher match rates on input grids than
+output grids. InsideOutside: 81% against 28%. SameDifferent: 97% against
+57%. Copy reverses this, with output checks matching at a higher rate than
+input checks, 88.5% against 80.8% in the diverse-pair result.</p>
+<p>Decisions.md D14 established, for InsideOutside, that this asymmetry is
+present in the raw encoder output before any blending, not an artifact of
+the blending mechanism. The same check applied to Copy confirms the same
+property in the reversed direction. Raw <code>sameColor</code> coverage across all
+ten Copy tasks is 69.8% on input grids and 94.3% on output grids, a
+24.5-point gap in the same direction as the blend-level result.</p>
+<p>A plausible account for the direction of the reversal is that
+InsideOutside's transformations typically remove structure, retaining only
+an inner or outer object and discarding the containment relation, while
+Copy's transformations plausibly duplicate an object, which creates or
+preserves a same-colour pair rather than removing one. This account is
+consistent with the two groups' names and with the coverage data reported
+above. It has not been verified against the per-task transformation
+pattern the way D14 verified InsideOutside's asymmetry by classifying each
+of its seven usable tasks individually. That classification is reported as
+an open item in Section 5.</p>
+<h2 id="36-interpretation-near-ceiling-performance-and-primitive-recovery">3.6 Interpretation: near-ceiling performance and primitive recovery</h2>
+<p>For these two relations, the highest match rates are obtained when the
+blend reduces to the bare anchor relation, with the remaining property
+slots generalized to unconstrained variables. D11 established this
+pattern for <code>contains</code>. The diverse-pair selection strategy consistently
+favours exactly this outcome, since a maximally general blend is
+definitionally the pair with the fewest coincidentally agreeing scalar
+slots.</p>
+<p>This bears on how the match-rate results in this section should be read.
+A blend that recovers the bare anchor relation will match any grid
+carrying that relation, by construction, and will score well on any metric
+built from match count. High match rate in this section therefore
+demonstrates that the selection mechanism reliably recovers a primitive
+already present in the encoder's vocabulary. It does not, on its own,
+demonstrate that blending discovers relational structure beyond what the
+vocabulary already provides. This is the distinction the novelty scoring
+mechanism reported in Section 4 is designed to address, and decisions.md
+D16 reports a directly relevant finding: <code>n_fixed</code>, the count of scalar
+slots a blend retains as ground values, is both the majority outcome
+across the full space of possible pairs and the property D11 identified as
+predicting worse held-out generalization. A high match rate and a genuinely
+novel concept are not the same claim, and the results in this section
+support the first without, by themselves, supporting the second.</p>
+<p>Next: <a href="../analysis4/">Novelty and human evaluation</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

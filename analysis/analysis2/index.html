@@ -1,0 +1,767 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Analysis2 - Pattern Discovery in Symbolic Visual Structures</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analysis-2-coverage-of-the-relational-vocabulary" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-header__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pattern Discovery in Symbolic Visual Structures
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Analysis2
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../log/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Research Log
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../concepts.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Concepts
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-nav__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pattern Discovery in Symbolic Visual Structures
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#21-the-coverage-ceiling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 The coverage ceiling
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Method
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 Results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-contains-is-the-weakest-relation-in-the-vocabulary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 contains is the weakest relation in the vocabulary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-identifying-further-test-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 Identifying further test groups
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<p><a href="../../">Contents</a> · Previous: <a href="../analysis1/">Scope and requirements mapping</a> · Next: <a href="../analysis3/">Diversity-based pair selection</a></p>
+<h1 id="analysis-2-coverage-of-the-relational-vocabulary">Analysis, 2: Coverage of the relational vocabulary</h1>
+<h2 id="21-the-coverage-ceiling">2.1 The coverage ceiling</h2>
+<p>A blend pattern anchored on relation <em>r</em> can only match a grid that
+contains at least one atom of <em>r</em>. For a leave-one-out sweep over a set of
+held-out tasks, this bounds the achievable match rate before any candidate
+is extracted or any blend is built. The bound is the fraction of held-out
+grids carrying at least one atom of the anchor relation. This quantity is
+computed directly from encoder output and requires no MeTTa evaluation.</p>
+<p>This section reports that bound, measured across the full ConceptARC
+benchmark, for every relation the candidate schema can anchor on. Section 3
+reports experimental results against the bounds established here.</p>
+<h2 id="22-method">2.2 Method</h2>
+<p><code>python/coverage_matrix.py</code> encodes every grid of every task in every
+ConceptARC concept group once. From that single encoding pass it records,
+for each of the five anchor relations defined in <code>enumerate.py</code>
+(<code>contains</code>, <code>sameColor</code>, <code>sameShape</code>, <code>alignedRow</code>, <code>alignedCol</code>), the
+number of grids carrying at least one atom of that relation and the number
+of tasks carrying the relation in at least one grid. The second count
+determines whether a group and relation combination has enough structure to
+support a leave-one-out sweep. Five tasks is the minimum used in this
+project (Section 3, SameDifferent/<code>sameShape</code>). Seven tasks is the number
+used for the InsideOutside/<code>contains</code> sweep reported in decisions.md D14.</p>
+<h2 id="23-results">2.3 Results</h2>
+<p>Table 3 reports grid-level coverage for all sixteen ConceptARC groups and
+all five anchor relations. A cell reports matched grids over total grids
+and the resulting percentage. An asterisk marks a relation with at least
+five tasks carrying it in the group.</p>
+<p><strong>Table 3.</strong> Grid-level relational coverage across the ConceptARC benchmark.</p>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>contains</th>
+<th>sameColor</th>
+<th>sameShape</th>
+<th>alignedRow</th>
+<th>alignedCol</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AboveBelow</td>
+<td>13/108 (12%)</td>
+<td>78/108 (72%)*</td>
+<td>49/108 (45%)*</td>
+<td>49/108 (45%)*</td>
+<td>75/108 (69%)*</td>
+</tr>
+<tr>
+<td>Center</td>
+<td>17/120 (14%)*</td>
+<td>66/120 (55%)*</td>
+<td>54/120 (45%)*</td>
+<td>39/120 (32%)*</td>
+<td>44/120 (37%)*</td>
+</tr>
+<tr>
+<td>CleanUp</td>
+<td>32/106 (30%)*</td>
+<td>79/106 (75%)*</td>
+<td>73/106 (69%)*</td>
+<td>68/106 (64%)*</td>
+<td>63/106 (59%)*</td>
+</tr>
+<tr>
+<td>CompleteShape</td>
+<td>9/102 (9%)</td>
+<td>61/102 (60%)*</td>
+<td>52/102 (51%)*</td>
+<td>47/102 (46%)*</td>
+<td>53/102 (52%)*</td>
+</tr>
+<tr>
+<td>Copy</td>
+<td>43/106 (41%)*</td>
+<td>87/106 (82%)*</td>
+<td>87/106 (82%)*</td>
+<td>78/106 (74%)*</td>
+<td>63/106 (59%)*</td>
+</tr>
+<tr>
+<td>Count</td>
+<td>13/114 (11%)</td>
+<td>32/114 (28%)*</td>
+<td>27/114 (24%)*</td>
+<td>27/114 (24%)*</td>
+<td>19/114 (17%)*</td>
+</tr>
+<tr>
+<td>ExtendToBoundary</td>
+<td>33/118 (28%)*</td>
+<td>55/118 (47%)*</td>
+<td>44/118 (37%)*</td>
+<td>39/118 (33%)*</td>
+<td>36/118 (31%)*</td>
+</tr>
+<tr>
+<td>ExtractObjects</td>
+<td>32/106 (30%)*</td>
+<td>48/106 (45%)*</td>
+<td>47/106 (44%)*</td>
+<td>46/106 (43%)*</td>
+<td>40/106 (38%)*</td>
+</tr>
+<tr>
+<td>FilledNotFilled</td>
+<td>31/118 (26%)*</td>
+<td>52/118 (44%)*</td>
+<td>42/118 (36%)*</td>
+<td>52/118 (44%)*</td>
+<td>50/118 (42%)*</td>
+</tr>
+<tr>
+<td>HorizontalVertical</td>
+<td>25/110 (23%)</td>
+<td>75/110 (68%)*</td>
+<td>70/110 (64%)*</td>
+<td>71/110 (65%)*</td>
+<td>70/110 (64%)*</td>
+</tr>
+<tr>
+<td>InsideOutside</td>
+<td>46/118 (39%)*</td>
+<td>84/118 (71%)*</td>
+<td>79/118 (67%)*</td>
+<td>76/118 (64%)*</td>
+<td>65/118 (55%)*</td>
+</tr>
+<tr>
+<td>MoveToBoundary</td>
+<td>5/110 (5%)</td>
+<td>54/110 (49%)*</td>
+<td>32/110 (29%)*</td>
+<td>50/110 (45%)*</td>
+<td>37/110 (34%)*</td>
+</tr>
+<tr>
+<td>Order</td>
+<td>14/102 (14%)</td>
+<td>57/102 (56%)*</td>
+<td>56/102 (55%)*</td>
+<td>64/102 (63%)*</td>
+<td>64/102 (63%)*</td>
+</tr>
+<tr>
+<td>SameDifferent</td>
+<td>33/126 (26%)*</td>
+<td>71/126 (56%)*</td>
+<td>87/126 (69%)*</td>
+<td>68/126 (54%)*</td>
+<td>52/126 (41%)*</td>
+</tr>
+<tr>
+<td>TopBottom2D</td>
+<td>8/128 (6%)</td>
+<td>25/128 (20%)</td>
+<td>41/128 (32%)*</td>
+<td>22/128 (17%)*</td>
+<td>52/128 (41%)*</td>
+</tr>
+<tr>
+<td>TopBottom3D</td>
+<td>15/122 (12%)</td>
+<td>72/122 (59%)*</td>
+<td>47/122 (39%)*</td>
+<td>59/122 (48%)*</td>
+<td>54/122 (44%)*</td>
+</tr>
+</tbody>
+</table>
+<h2 id="24-contains-is-the-weakest-relation-in-the-vocabulary">2.4 <code>contains</code> is the weakest relation in the vocabulary</h2>
+<p><code>contains</code> has the lowest coverage of the five relations in all sixteen
+groups, without exception. Its coverage ranges from 4.5% (MoveToBoundary)
+to 40.6% (Copy). In every group, each of the other four relations has
+higher coverage than <code>contains</code>.</p>
+<p>The consequence for sweep design is direct. <code>contains</code> clears the
+five-task usable threshold in 8 of 16 groups. Every other relation clears
+it in at least 15 of 16 groups. <code>sameShape</code>, <code>alignedRow</code>, and
+<code>alignedCol</code> clear it in all sixteen. <code>sameColor</code> clears it in fifteen of
+sixteen, falling short only in TopBottom2D, where the relation covers 25 of
+128 grids (20%) but fewer than five of the group's tasks carry it in any
+grid. A leave-one-out sweep anchored on <code>contains</code> is
+therefore both lower in ceiling and more restricted in which groups can
+support one, compared to a sweep on any of the other four relations.</p>
+<p>This bears directly on the InsideOutside/<code>contains</code> sweep reported in
+Section 3 and in decisions.md D9, D11, and D14. That sweep uses 46 of 118
+grids across all ten InsideOutside tasks (39.0%), or 46 of 80 grids across
+the seven tasks that carry <code>contains</code> structure at all (57.5%), the figure
+reported in D14 as the sweep's ceiling. The two percentages describe the
+same 46 matching grids against different denominators, the full group
+against the subset a leave-one-out sweep actually draws on. Both are
+correct. The flagship experiment in this project is anchored on the
+sparsest relation the vocabulary provides.</p>
+<h2 id="25-identifying-further-test-groups">2.5 Identifying further test groups</h2>
+<p>Table 4 reports the ten highest-coverage group and relation pairs that
+clear the five-task usable threshold, drawn from all 71 pairs meeting that
+threshold across the benchmark.</p>
+<p><strong>Table 4.</strong> Highest-coverage sweep-ready group and relation pairs.</p>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Relation</th>
+<th>Coverage</th>
+<th>Usable tasks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Copy</td>
+<td>sameColor</td>
+<td>87/106 (82.1%)</td>
+<td>10/10</td>
+</tr>
+<tr>
+<td>Copy</td>
+<td>sameShape</td>
+<td>87/106 (82.1%)</td>
+<td>10/10</td>
+</tr>
+<tr>
+<td>CleanUp</td>
+<td>sameColor</td>
+<td>79/106 (74.5%)</td>
+<td>10/10</td>
+</tr>
+<tr>
+<td>Copy</td>
+<td>alignedRow</td>
+<td>78/106 (73.6%)</td>
+<td>10/10</td>
+</tr>
+<tr>
+<td>AboveBelow</td>
+<td>sameColor</td>
+<td>78/108 (72.2%)</td>
+<td>10/10</td>
+</tr>
+<tr>
+<td>InsideOutside</td>
+<td>sameColor</td>
+<td>84/118 (71.2%)</td>
+<td>10/10</td>
+</tr>
+<tr>
+<td>AboveBelow</td>
+<td>alignedCol</td>
+<td>75/108 (69.4%)</td>
+<td>9/10</td>
+</tr>
+<tr>
+<td>SameDifferent</td>
+<td>sameShape</td>
+<td>87/126 (69.0%)</td>
+<td>10/10</td>
+</tr>
+<tr>
+<td>CleanUp</td>
+<td>sameShape</td>
+<td>73/106 (68.9%)</td>
+<td>10/10</td>
+</tr>
+<tr>
+<td>HorizontalVertical</td>
+<td>sameColor</td>
+<td>75/110 (68.2%)</td>
+<td>10/10</td>
+</tr>
+</tbody>
+</table>
+<p>Copy/<code>sameColor</code> and Copy/<code>sameShape</code> are tied for the highest coverage
+of any pair in the benchmark, both at 82.1% with all ten tasks usable. This
+is the basis for selecting Copy/<code>sameColor</code> as a third group and relation
+for the diversity-selection replication reported in Section 3, alongside
+InsideOutside/<code>contains</code> (D9, D11, D14) and SameDifferent/<code>sameShape</code>
+(D10, D12).</p>
+<p>Next: <a href="../analysis3/">Diversity-based pair selection</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

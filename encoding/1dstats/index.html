@@ -1,0 +1,661 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Learning the Language of Concepts - Pattern Discovery in Symbolic Visual Structures</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#learning-the-language-of-concepts" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-header__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pattern Discovery in Symbolic Visual Structures
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Learning the Language of Concepts
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../log/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Research Log
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../concepts.md" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Concepts
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Pattern Discovery in Symbolic Visual Structures" class="md-nav__button md-logo" aria-label="Pattern Discovery in Symbolic Visual Structures" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Pattern Discovery in Symbolic Visual Structures
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../log/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research Log
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../concepts.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Concepts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#a-first-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A first example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-second-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A second example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-no-mask-can-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why no mask can work
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-this-means-for-our-vocabulary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What this means for our vocabulary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-this-leaves-us" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where this leaves us
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="learning-the-language-of-concepts">Learning the Language of Concepts</h1>
+<p>On the previous page we wrote a grid down as pixels, then imagined more useful
+facts we could add on top: which cells touch, which cells group into objects,
+which object sits inside which. Every one of those was chosen by a person
+looking at a picture and deciding what mattered.</p>
+<p>That is the part we want the program to do for itself. So the question becomes:
+where does a vocabulary come from, if nobody hands it over?</p>
+<p>Grids are a lot to think about at once, so this page works in one dimension.
+Five cells in a row, two colours. Small enough to write the whole thing out,
+and it turns out to be enough to run into the real problem.</p>
+<h2 id="a-first-example">A first example</h2>
+<p>Four input rows and their outputs:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>in0  0 0 1 0 0        out0  0 0 1 1 0
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>in1  0 1 0 0 0        out1  0 1 1 0 0
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>in2  0 0 0 1 0        out2  0 0 0 1 1
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>in3  1 0 0 0 0        out3  1 1 0 0 0
+</code></pre></div>
+<p>Most people see this quickly. The 1 stays where it is, and it also spreads one
+step to the right. Or, said from each cell's point of view: a cell is 1 if it
+was already 1, or if the cell to its left was 1.</p>
+<p>Suppose we know nothing except that a cell's output might depend on the input
+row. For binary cells there are 32 possible input rows. If we saw all 32 and
+their outputs, we would have solved this task in a brute way, assuming it is
+fully causal with no randomness. But that is not something we can generalise.
+It works for no grid size other than five cells, and size makes the number of
+possibilities huge. A 5x5 grid with 10 colours has 10^(5*5) = 10^25 possible
+inputs, which is 10000000000000000000000000.</p>
+<p>Let's make a design decision instead: centre the input row on the output cell
+we are checking, so that corresponding cells line up. I write <code>e</code> for
+positions that fall outside the row:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>in0        out0
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>eeee00100  0
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>eee00100e  0
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>ee00100ee  1
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>e00100eee  1
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>00100eeee  0
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>in1        out1
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>eeee01000  0
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>eee01000e  1
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>ee01000ee  1
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>e01000eee  0
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>01000eeee  0
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>in2        out2
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>eeee00010  0
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>eee00010e  0
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>ee00010ee  0
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>e00010eee  1
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>00010eeee  1
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>in3        out3
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>eeee10000  1
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>eee10000e  1
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>ee10000ee  0
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>e10000eee  0
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>10000eeee  0
+</code></pre></div>
+<p>Now count, for each of the nine window positions, how often a 1 appears there,
+split by what the output cell became:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>ones per position when output is 0:   1 2 3 0 0 3 2 1 0
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>ones per position when output is 1:   0 0 0 4 4 0 0 0 0
+</code></pre></div>
+<p>The two rows never overlap. Whenever the output is 1, the input's 1 sits
+either in the centre position or one step to its left, and it never sits in
+those positions when the output is 0. That gives us the mask <code>000110000</code>: a
+cell becomes 1 exactly when a 1 appears at one of the marked positions.</p>
+<p>Applying it means sliding the same window along and looking only at the two
+marked positions, the centre and one step to its left. For <code>in0</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>                window                   marked     output
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>cell 0     e e e e 0 0 1 0 0              e 0         0
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>cell 1     e e e 0 0 1 0 0 e              0 0         0
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>cell 2     e e 0 0 1 0 0 e e              0 1         1
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>cell 3     e 0 0 1 0 0 e e e              1 0         1
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>cell 4     0 0 1 0 0 e e e e              0 0         0
+</code></pre></div>
+<p>Reading down the last column gives <code>0 0 1 1 0</code>, which is <code>out0</code>.</p>
+<p>This is a much stronger result than the brute-force table. It works for a 1D
+input of any size, even line by line on a 2D grid. It has compressed the
+operation from a big lookup table into a single convolution mask. But notice
+who made it possible. Lining up corresponding cells is a geometric idea that
+humans bring to grids without thinking about it. For the computer, five bits
+were just data. A program can be made to find this alignment, but nothing
+about the data makes it as natural as it is for us.</p>
+<h2 id="a-second-example">A second example</h2>
+<p>Now a different task, same shape of problem:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>in0  1 0 1 0 0        out0  1 1 1 0 0
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>in1  0 1 0 1 0        out1  0 1 1 1 0
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>in2  0 1 0 0 1        out2  0 1 1 1 1
+</code></pre></div>
+<p>Again most people see it at once. There are two 1s, and the space between them
+fills in. From a cell's point of view: a cell is 1 if there is a 1 somewhere at
+or to its left, and also a 1 somewhere at or to its right.</p>
+<p>We run exactly the same procedure. Centre the windows, count the ones, split by
+what the output cell became:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ones per position when output is 0:   1 2 1 2 0 2 0 1 1
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>ones per position when output is 1:   0 1 3 3 6 3 3 1 0
+</code></pre></div>
+<p>Two positions still look clean. Position 4, the centre, and position 6, two
+cells to the right, hold a 1 only when the output is 1. So the method proposes
+the mask <code>000010100</code>.</p>
+<p>Apply it to the training rows it was derived from:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>input 1 0 1 0 0    want 1 1 1 0 0    mask gives 1 0 1 0 0
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>input 0 1 0 1 0    want 0 1 1 1 0    mask gives 0 1 0 1 0
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>input 0 1 0 0 1    want 0 1 1 1 1    mask gives 0 1 1 0 1
+</code></pre></div>
+<p>Wrong on every row, and wrong in a different place each time. This is not a
+poor choice of positions. We checked all 511 possible masks over the nine
+window positions, and none of them reproduces these three examples.</p>
+<h2 id="why-no-mask-can-work">Why no mask can work</h2>
+<p>The counting method asks one question per position: does a 1 appear here more
+often when the answer is yes? Then it collects the positions that pass and
+fires whenever any of them holds. The evidence adds up disjunctively, and a
+mask is an OR over its marked positions.</p>
+<p>This task needs an AND. The cell at position 1 in <code>1 0 1 0 0</code> becomes 1 because
+there is a 1 to its left and a 1 to its right. Either one on its own must do
+nothing, otherwise a row with a single 1 would start filling in every
+direction. A requirement that two things hold together is invisible to a method
+that only ever measures one position at a time, because neither position looks
+decisive on its own.</p>
+<p>Notice what is not the problem here: Five-cell rows put every cell within four
+steps of every other, so our nine-wide window already reaches the whole row.
+There is nothing the window failed to see. The information was all present and
+the shape of the rule was wrong.</p>
+<p>On longer rows a second problem joins it. The gap between the two 1s can be as
+wide as the row, so even a rule that could express AND would need to look
+arbitrarily far in both directions. A mask that grows with its input is no
+longer a mask.</p>
+<p>So the idea we need is not in the space being searched, and no amount of
+counting will find it. Somebody, or something, has to propose it first.</p>
+<p>That is the real difficulty, and it is not about running out of computing
+power. Both problems here are tiny. The difficulty is that the second task
+needs a kind of rule the first one gave no reason to invent.</p>
+<p>There is an uncomfortable ladder in view here. When a simple OR over a window
+fails, allow any combination of positions, including ANDs. When a fixed window
+fails, allow reach of any distance. When that fails, allow state carried along
+a sweep, and past that lie arbitrary programs. Each step buys expressiveness
+and pays for it in search space, and the top of the ladder, the space many
+believe ARC tasks are really drawn from, is all computable algorithms. Nothing
+searches that space unaided. Something has to narrow it first, and whatever
+does the narrowing is doing the job a vocabulary does.</p>
+<h2 id="what-this-means-for-our-vocabulary">What this means for our vocabulary</h2>
+<p>Our encoder records which cells touch each other, and that is a neighbourhood
+fact. It has nothing that says one cell is somewhere to the left of another at
+any distance. Written out, this task needs something like:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>(leftOf  &lt;cell-a&gt; &lt;cell-b&gt;)    ; a is somewhere to the left of b, any distance
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>(rightOf &lt;cell-a&gt; &lt;cell-b&gt;)    ; and its mirror
+</code></pre></div>
+<p>which is <code>adj</code> followed as many times as it takes. With those, the rule is
+sayable: a cell is 1 when some 1 is at or left of it and some 1 is at or right
+of it. In the first example these predicates would have been pointless. Here
+nothing works without them, and they have to be used together rather than
+separately.</p>
+<p>The same idea covers a whole family of ARC tasks: filling the space between
+two marks, extending a line until it reaches an edge, letting shapes fall to
+the bottom, casting a ray until it hits something. All of them are about
+reaching, not about touching.</p>
+<p>It is not free. Recording which cells touch is one fact per neighbouring pair.
+Recording which cells are anywhere to the left of which is a fact for every
+pair in the row, so a row twice as long costs four times as much. On five
+cells that is nothing. On a thirty by thirty grid it needs more care.</p>
+<h2 id="where-this-leaves-us">Where this leaves us</h2>
+<p>Two five-cell examples, and already the shape of the problem is visible. The first was solved by counting, once we chose what to count. The second could not be solved by counting at all, whatever we counted, because the rule it needs has a shape the counting method cannot represent.</p>
+<p>This is why the vocabulary is the thing worth being careful about. A concept the encoder cannot express is not merely expensive to find. It is not there to be found.</p>
+<p>Humans are remarkably good at inventing and applying useful vocabularies. We can introduce a concept such as between, inside, or left of when a problem calls for it, and then use that concept to reason about the problem. An artificial general intelligence would ideally need to do something similar. This project does not attempt to go so far. Instead, we take a smaller and more controlled step: we start with a limited vocabulary and ask whether new concepts can be built from concepts that are already available.</p>
+<p>The next question is therefore where a concept like that comes from, if we do not want to keep inventing predicates by hand every time a task needs one. One answer is to build new concepts out of the ones already learned, which is what concept blending is for.</p>
+<p><a href="../simpleblend/">Blending two concepts into a third</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
