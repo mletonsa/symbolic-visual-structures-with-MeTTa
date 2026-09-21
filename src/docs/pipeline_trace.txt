@@ -1,0 +1,184 @@
+
+========================================================================
+STAGE 0  the grid, and the atoms it becomes
+========================================================================
+task InsideOutside1, grid train0_input, 10x10, 5 objects
+
+   . . . . . . . . . .
+   . . . . . . . . . .
+   . . 2 2 2 2 2 2 . 1
+   . . 2 . . . . 2 . .
+   . . 2 . . 1 . 2 . .
+   . . 2 . . . . 2 . .
+   . . 2 . . . . 2 . .
+   . . 2 2 2 2 2 2 . .
+   1 . . . . . . . . .
+   . . . . . 1 . . . .
+
+575 atoms total, 504 of them cell-level
+
+object level and above:
+    (object conceptarc__InsideOutside1 train0_input conceptarc__InsideOutside1_train0_input_o0)
+    (objColor conceptarc__InsideOutside1_train0_input_o0 red)
+    (size conceptarc__InsideOutside1_train0_input_o0 20)
+    (bbox conceptarc__InsideOutside1_train0_input_o0 (C 2 2) (C 7 7))
+    (shape conceptarc__InsideOutside1_train0_input_o0 (Shape ((0 0) (0 1) (0 2) (0 3) (0 4) (0 5) (1 0) (1 5) (2 0) (2 5) (3 0) (3 5) (4 0) (4 5) (5 0) (5 1) (5 2) (5 3) (5 4) (5 5))))
+    (holes conceptarc__InsideOutside1_train0_input_o0 1)
+    (symmetric conceptarc__InsideOutside1_train0_input_o0 h)
+    (symmetric conceptarc__InsideOutside1_train0_input_o0 v)
+    (symmetric conceptarc__InsideOutside1_train0_input_o0 d1)
+    (symmetric conceptarc__InsideOutside1_train0_input_o0 d2)
+    (symmetric conceptarc__InsideOutside1_train0_input_o0 rot90)
+    (symmetric conceptarc__InsideOutside1_train0_input_o0 rot180)
+    (object conceptarc__InsideOutside1 train0_input conceptarc__InsideOutside1_train0_input_o1)
+    (objColor conceptarc__InsideOutside1_train0_input_o1 blue)
+    (size conceptarc__InsideOutside1_train0_input_o1 1)
+    (bbox conceptarc__InsideOutside1_train0_input_o1 (C 2 9) (C 2 9))
+    (shape conceptarc__InsideOutside1_train0_input_o1 (Shape ((0 0))))
+    (symmetric conceptarc__InsideOutside1_train0_input_o1 h)
+    (symmetric conceptarc__InsideOutside1_train0_input_o1 v)
+    (symmetric conceptarc__InsideOutside1_train0_input_o1 d1)
+    (symmetric conceptarc__InsideOutside1_train0_input_o1 d2)
+    (symmetric conceptarc__InsideOutside1_train0_input_o1 rot90)
+    (symmetric conceptarc__InsideOutside1_train0_input_o1 rot180)
+    (object conceptarc__InsideOutside1 train0_input conceptarc__InsideOutside1_train0_input_o2)
+    (objColor conceptarc__InsideOutside1_train0_input_o2 blue)
+    (size conceptarc__InsideOutside1_train0_input_o2 1)
+    (bbox conceptarc__InsideOutside1_train0_input_o2 (C 4 5) (C 4 5))
+    (shape conceptarc__InsideOutside1_train0_input_o2 (Shape ((0 0))))
+    (symmetric conceptarc__InsideOutside1_train0_input_o2 h)
+    (symmetric conceptarc__InsideOutside1_train0_input_o2 v)
+    (symmetric conceptarc__InsideOutside1_train0_input_o2 d1)
+    (symmetric conceptarc__InsideOutside1_train0_input_o2 d2)
+    (symmetric conceptarc__InsideOutside1_train0_input_o2 rot90)
+    (symmetric conceptarc__InsideOutside1_train0_input_o2 rot180)
+    (object conceptarc__InsideOutside1 train0_input conceptarc__InsideOutside1_train0_input_o3)
+    (objColor conceptarc__InsideOutside1_train0_input_o3 blue)
+    (size conceptarc__InsideOutside1_train0_input_o3 1)
+    (bbox conceptarc__InsideOutside1_train0_input_o3 (C 8 0) (C 8 0))
+    (shape conceptarc__InsideOutside1_train0_input_o3 (Shape ((0 0))))
+    (symmetric conceptarc__InsideOutside1_train0_input_o3 h)
+    (symmetric conceptarc__InsideOutside1_train0_input_o3 v)
+    (symmetric conceptarc__InsideOutside1_train0_input_o3 d1)
+    (symmetric conceptarc__InsideOutside1_train0_input_o3 d2)
+    (symmetric conceptarc__InsideOutside1_train0_input_o3 rot90)
+    (symmetric conceptarc__InsideOutside1_train0_input_o3 rot180)
+    (object conceptarc__InsideOutside1 train0_input conceptarc__InsideOutside1_train0_input_o4)
+    (objColor conceptarc__InsideOutside1_train0_input_o4 blue)
+    (size conceptarc__InsideOutside1_train0_input_o4 1)
+    (bbox conceptarc__InsideOutside1_train0_input_o4 (C 9 5) (C 9 5))
+    (shape conceptarc__InsideOutside1_train0_input_o4 (Shape ((0 0))))
+    (symmetric conceptarc__InsideOutside1_train0_input_o4 h)
+    (symmetric conceptarc__InsideOutside1_train0_input_o4 v)
+    (symmetric conceptarc__InsideOutside1_train0_input_o4 d1)
+    (symmetric conceptarc__InsideOutside1_train0_input_o4 d2)
+    (symmetric conceptarc__InsideOutside1_train0_input_o4 rot90)
+    (symmetric conceptarc__InsideOutside1_train0_input_o4 rot180)
+    (alignedRow conceptarc__InsideOutside1_train0_input_o0 conceptarc__InsideOutside1_train0_input_o1)
+    (contains conceptarc__InsideOutside1_train0_input_o0 conceptarc__InsideOutside1_train0_input_o2)
+    (sameShape conceptarc__InsideOutside1_train0_input_o1 conceptarc__InsideOutside1_train0_input_o2)
+    (sameColor conceptarc__InsideOutside1_train0_input_o1 conceptarc__InsideOutside1_train0_input_o2)
+    (sameShape conceptarc__InsideOutside1_train0_input_o1 conceptarc__InsideOutside1_train0_input_o3)
+    (sameColor conceptarc__InsideOutside1_train0_input_o1 conceptarc__InsideOutside1_train0_input_o3)
+    (sameShape conceptarc__InsideOutside1_train0_input_o1 conceptarc__InsideOutside1_train0_input_o4)
+    (sameColor conceptarc__InsideOutside1_train0_input_o1 conceptarc__InsideOutside1_train0_input_o4)
+    (sameShape conceptarc__InsideOutside1_train0_input_o2 conceptarc__InsideOutside1_train0_input_o3)
+    (sameColor conceptarc__InsideOutside1_train0_input_o2 conceptarc__InsideOutside1_train0_input_o3)
+    (sameShape conceptarc__InsideOutside1_train0_input_o2 conceptarc__InsideOutside1_train0_input_o4)
+    (sameColor conceptarc__InsideOutside1_train0_input_o2 conceptarc__InsideOutside1_train0_input_o4)
+    (alignedCol conceptarc__InsideOutside1_train0_input_o2 conceptarc__InsideOutside1_train0_input_o4)
+    (sameShape conceptarc__InsideOutside1_train0_input_o3 conceptarc__InsideOutside1_train0_input_o4)
+    (sameColor conceptarc__InsideOutside1_train0_input_o3 conceptarc__InsideOutside1_train0_input_o4)
+
+========================================================================
+STAGE 1  candidates extracted from that grid
+========================================================================
+15 candidates, 1 on contains
+
+   alignedRow  x=red/20 y=blue/1  from conceptarc__InsideOutside1_train0_input_o0 conceptarc__InsideOutside1_train0_input_o1
+   contains    x=red/20 y=blue/1  from conceptarc__InsideOutside1_train0_input_o0 conceptarc__InsideOutside1_train0_input_o2
+   sameShape   x=blue/1 y=blue/1  from conceptarc__InsideOutside1_train0_input_o1 conceptarc__InsideOutside1_train0_input_o2
+   sameColor   x=blue/1 y=blue/1  from conceptarc__InsideOutside1_train0_input_o1 conceptarc__InsideOutside1_train0_input_o2
+   sameShape   x=blue/1 y=blue/1  from conceptarc__InsideOutside1_train0_input_o1 conceptarc__InsideOutside1_train0_input_o3
+   sameColor   x=blue/1 y=blue/1  from conceptarc__InsideOutside1_train0_input_o1 conceptarc__InsideOutside1_train0_input_o3
+
+the first one as MeTTa, which is what antiunify.metta receives:
+
+    (Candidate contains red blue 20 1 ((SC 0 0) (SC 0 1) (SC 0 2) (SC 0 3) (SC 0 4) (SC 0 5) (SC 1 0) (SC 1 5) (SC 2 0) (SC 2 5) (SC 3 0) (SC 3 5) (SC 4 0) (SC 4 5) (SC 5 0) (SC 5 1) (SC 5 2) (SC 5 3) (SC 5 4) (SC 5 5)) ((SC 0 0)) (d1 d2 h rot180 rot90 v) (d1 d2 h rot180 rot90 v))
+
+========================================================================
+STAGE 2  pairing against another task's candidates
+========================================================================
+InsideOutside1: 9 candidates   InsideOutside4: 60 candidates
+valid pairs: 540
+
+coincidental fixed slots for the first few pairs (lower is better):
+   pair 0: 0
+   pair 1: 2
+   pair 2: 4
+   pair 3: 0
+   pair 4: 2
+   pair 5: 4
+   pair 6: 1
+   pair 7: 3
+
+selected pair has 0 coincidental fixed slots
+   A: (Candidate contains red blue 20 1 ((SC 0 0) (SC 0 1) (SC 0 2) (SC 0 3) (SC 0 4) (SC 0 5) (SC 1 0) (SC 1 5) (SC 2 0) (SC 2 5) (SC 3 0) (SC 3 5) (SC 4 0) (SC 4 5) (SC 5 0) (SC 5 1) (SC 5 2) (SC 5 3) (SC 5 4) (SC 5 5)) ((SC 0 0)) (d1 d2 h rot180 rot90 v) (d1 d2 h rot180 rot90 v))
+   B: (Candidate contains blue green 38 20 ((SC 0 0) (SC 0 1) (SC 0 2) (SC 0 3) (SC 0 4) (SC 0 5) (SC 0 6) (SC 0 7) (SC 0 8) (SC 0 9) (SC 0 10) (SC 1 0) (SC 1 10) (SC 2 0) (SC 2 10) (SC 3 0) (SC 3 10) (SC 4 0) (SC 4 10) (SC 5 0) (SC 5 10) (SC 6 0) (SC 6 10) (SC 7 0) (SC 7 10) (SC 8 0) (SC 8 10) (SC 9 0) (SC 9 1) (SC 9 2) (SC 9 3) (SC 9 4) (SC 9 5) (SC 9 6) (SC 9 7) (SC 9 8) (SC 9 9) (SC 9 10)) ((SC 0 0) (SC 0 1) (SC 0 2) (SC 0 3) (SC 0 4) (SC 0 5) (SC 1 0) (SC 1 5) (SC 2 0) (SC 2 5) (SC 3 0) (SC 3 5) (SC 4 0) (SC 4 5) (SC 5 0) (SC 5 1) (SC 5 2) (SC 5 3) (SC 5 4) (SC 5 5)) (h rot180 v) (d1 d2 h rot180 rot90 v))
+
+========================================================================
+STAGE 3  the generic space
+========================================================================
+(GenericSpace contains (ColorX (Generalized colX)) (ColorY (Generalized colY)) (SizeX (Generalized szX)) (SizeY (Generalized szY)) (ShapeX (Generalized shX)) (ShapeY (Generalized shY)) (SymX (h rot180 v)) (SymY (d1 d2 h rot180 rot90 v)))
+
+========================================================================
+STAGE 4  the blend
+========================================================================
+(Blend ((contains X Y) (objColor X $X#7738) (objColor Y $X#7777) (size X $X#7816) (size Y $X#7855) (shape X $X#7894) (shape Y $X#7933)) (SymmetryUnion X (d1 d2 h rot180 rot90 v) Y (d1 d2 h rot180 rot90 v)) False)
+
+degenerate: False
+
+the materialized pattern on its own:
+
+    (contains X Y)
+    (objColor X $X#7738)
+    (objColor Y $X#7777)
+    (size X $X#7816)
+    (size Y $X#7855)
+    (shape X $X#7894)
+    (shape Y $X#7933)
+
+turned into a query:
+
+    (, (contains $qx $qy) (objColor $qx $gen0) (objColor $qy $gen1) (size $qx $gen2) (size $qy $gen3) (shape $qx $gen4) (shape $qy $gen5))
+
+========================================================================
+STAGE 5a  coherence against a held-out task
+========================================================================
+InsideOutside5: matched 7 of 12 grids
+
+   train0_input         1 matches
+   train0_output        0 matches
+   train1_input         1 matches
+   train1_output        0 matches
+   train2_input         4 matches
+   train2_output        1 matches
+   test0_input          2 matches
+   test0_output         0 matches
+   test1_input          0 matches
+   test1_output         0 matches
+   test2_input          7 matches
+   test2_output         3 matches
+
+input grids matched: 5   output grids matched: 2
+
+========================================================================
+STAGE 5b  MDL
+========================================================================
+total match instances : 19
+grids matched         : 7
+dl_definition         : 126.0 bits
+dl_raw_per_instance   : 126.0 bits
+dl_rewritten_per_inst : 54.0 bits
+dl_gain               : 1242.0 bits
+worth_it              : True

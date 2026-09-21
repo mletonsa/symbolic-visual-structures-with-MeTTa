@@ -1,0 +1,127 @@
+# InsideOutside leave-one-out sweep: diverse-pair-selection strategy
+
+Same 105 (held_out, source_pair) combinations as the "first candidate"
+baseline sweep, but each pair now selected via
+enumerate.select_most_diverse_pair (fewest coincidentally-fixed scalar
+slots, computed in pure Python, no MeTTa) rather than always taking
+each task's first candidate. See docs/decisions.md D11.
+
+InsideOutside1   InsideOutside10  InsideOutside4   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside10  InsideOutside5   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside10  InsideOutside6   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside10  InsideOutside7   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside10  InsideOutside8   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside4   InsideOutside5   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside4   InsideOutside6   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside4   InsideOutside7   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside4   InsideOutside8   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside5   InsideOutside6   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside5   InsideOutside7   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside5   InsideOutside8   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside6   InsideOutside7   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside6   InsideOutside8   matched 6/12  MDL=528.0
+InsideOutside1   InsideOutside7   InsideOutside8   matched 6/12  MDL=528.0
+InsideOutside4   InsideOutside1   InsideOutside10  matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside1   InsideOutside5   matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside1   InsideOutside6   matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside1   InsideOutside7   matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside1   InsideOutside8   matched 0/14  MDL=-84.0
+InsideOutside4   InsideOutside10  InsideOutside5   matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside10  InsideOutside6   matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside10  InsideOutside7   matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside10  InsideOutside8   matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside5   InsideOutside6   matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside5   InsideOutside7   matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside5   InsideOutside8   matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside6   InsideOutside7   matched 14/14  MDL=3996.0
+InsideOutside4   InsideOutside6   InsideOutside8   matched 14/14  MDL=3996.0
+InsideOutside5   InsideOutside1   InsideOutside10  matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside1   InsideOutside4   matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside1   InsideOutside6   matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside1   InsideOutside7   matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside1   InsideOutside8   matched 0/12  MDL=-84.0
+InsideOutside5   InsideOutside10  InsideOutside4   matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside10  InsideOutside6   matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside10  InsideOutside7   matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside10  InsideOutside8   matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside4   InsideOutside6   matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside4   InsideOutside7   matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside4   InsideOutside8   matched 7/12  MDL=1208.0
+InsideOutside6   InsideOutside1   InsideOutside10  matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside1   InsideOutside4   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside1   InsideOutside5   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside1   InsideOutside7   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside1   InsideOutside8   matched 0/10  MDL=-84.0
+InsideOutside6   InsideOutside10  InsideOutside4   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside10  InsideOutside5   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside10  InsideOutside7   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside10  InsideOutside8   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside4   InsideOutside5   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside4   InsideOutside7   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside4   InsideOutside8   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside5   InsideOutside7   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside5   InsideOutside8   matched 4/10  MDL=460.0
+InsideOutside6   InsideOutside7   InsideOutside8   matched 4/10  MDL=460.0
+InsideOutside4   InsideOutside7   InsideOutside8   matched 14/14  MDL=3996.0
+InsideOutside5   InsideOutside6   InsideOutside7   matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside6   InsideOutside8   matched 7/12  MDL=1208.0
+InsideOutside5   InsideOutside7   InsideOutside8   matched 7/12  MDL=1208.0
+InsideOutside7   InsideOutside1   InsideOutside10  matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside1   InsideOutside4   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside1   InsideOutside5   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside1   InsideOutside6   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside1   InsideOutside8   matched 0/12  MDL=-84.0
+InsideOutside7   InsideOutside10  InsideOutside4   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside10  InsideOutside5   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside10  InsideOutside6   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside10  InsideOutside8   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside4   InsideOutside5   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside4   InsideOutside6   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside4   InsideOutside8   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside5   InsideOutside6   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside5   InsideOutside8   matched 6/12  MDL=1616.0
+InsideOutside7   InsideOutside6   InsideOutside8   matched 6/12  MDL=1616.0
+InsideOutside8   InsideOutside1   InsideOutside10  matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside1   InsideOutside4   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside1   InsideOutside5   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside1   InsideOutside6   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside1   InsideOutside7   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside10  InsideOutside4   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside10  InsideOutside5   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside10  InsideOutside6   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside10  InsideOutside7   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside4   InsideOutside5   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside4   InsideOutside6   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside4   InsideOutside7   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside5   InsideOutside6   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside5   InsideOutside7   matched 4/10  MDL=664.0
+InsideOutside8   InsideOutside6   InsideOutside7   matched 4/10  MDL=664.0
+InsideOutside10  InsideOutside1   InsideOutside4   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside1   InsideOutside5   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside1   InsideOutside6   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside1   InsideOutside7   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside1   InsideOutside8   matched 0/10  MDL=-84.0
+InsideOutside10  InsideOutside4   InsideOutside5   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside4   InsideOutside6   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside4   InsideOutside7   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside4   InsideOutside8   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside5   InsideOutside6   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside5   InsideOutside7   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside5   InsideOutside8   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside6   InsideOutside7   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside6   InsideOutside8   matched 5/10  MDL=1208.0
+InsideOutside10  InsideOutside7   InsideOutside8   matched 5/10  MDL=1208.0
+
+--- summary ---
+total blend+check runs: 105
+degenerate blends: 0
+overall match rate: 654/1200 (54%)
+input grids:  486/600 (81%)
+output grids: 168/600 (28%)
+complete-failure pairs (0 matches): 5/105
+
+--- comparison to first-candidate baseline (docs/insideoutside_leave_one_out_sweep.txt) ---
+                  first-candidate    diverse-pair
+overall match:    31%                54%
+input grids:      46%                81%
+output grids:     17%                28%

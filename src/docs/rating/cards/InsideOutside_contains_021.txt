@@ -1,0 +1,64 @@
+Concept card: InsideOutside_contains_021
+============================================================
+
+What this concept claims:
+  An object X contains an object Y. X's colour is fixed at green. Y's colour is fixed at orange. X is symmetric under: h, rot180, v. Y is symmetric under: h.
+
+Built from:
+
+grid train2_output:
+  .3333333333333
+  .3....77.....3
+  .3...7.7.....3
+  .3..7..7.....3
+  .3.7....7....3
+  .37......7...3
+  .37..6....7..3
+  .37........7.3
+  .37.........73
+  .3777777777773
+  .3333333333333
+  ..............
+  (X is the green object with 44 cells)
+
+grid test2_input:
+  333333333333333333
+  3................3
+  3................3
+  3.2222222.777777.3
+  3.2.....2.7....7.3
+  3.2444442.7.7777.3
+  3.24...42.7.7.77.3
+  3.2455542.7.7.77.3
+  3.24...42.7.7777.3
+  3.2444442.7....7.3
+  3.2222222.777777.3
+  3................3
+  3................3
+  3................3
+  333333333333333333
+  (Y is the orange object with 34 cells)
+
+Checked against grids from other tasks it was not built from:
+
+MATCHES  InsideOutside7/train2_input:
+  ..111...33333..
+  ..1.1...3.7.3..
+  .71.1.7.3...3..
+  ..1.1...3.7.3.7
+  ..1.1.7.3...3..
+  ..111...33333..
+
+DOES NOT MATCH  InsideOutside10/train0_input:
+  ............
+  ............
+  ..22222222..
+  ..2......2..
+  ..2..3333333
+  ..2......2..
+  ..2......2..
+  333333...2..
+  ..2......2..
+  ..22222222..
+  ............
+  ............

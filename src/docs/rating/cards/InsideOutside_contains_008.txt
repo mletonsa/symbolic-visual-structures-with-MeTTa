@@ -1,0 +1,64 @@
+Concept card: InsideOutside_contains_008
+============================================================
+
+What this concept claims:
+  An object X contains an object Y. Y is symmetric under: d1, d2, h, rot180, rot90, v (this holds for all six axes - common for small/simple shapes, may not be meaningful).
+
+Built from:
+
+grid test2_input:
+  333333333333333333
+  3................3
+  3................3
+  3.2222222.777777.3
+  3.2.....2.7....7.3
+  3.2444442.7.7777.3
+  3.24...42.7.7.77.3
+  3.2455542.7.7.77.3
+  3.24...42.7.7777.3
+  3.2444442.7....7.3
+  3.2222222.777777.3
+  3................3
+  3................3
+  3................3
+  333333333333333333
+  (X is the green object with 62 cells)
+
+grid test1_input:
+  ...............
+  .3......3...3..
+  ..22.2.........
+  ..223..2.......
+  ..2.....2222...
+  .22..3.....22.3
+  .......3.3..2..
+  ..2..3......2..
+  ..22....3...2..
+  ...2........2..
+  .3.22.3.2.222..
+  ....2..22......
+  ..3..222.3.3..3
+  ...............
+  ...............
+  (Y is the green object with 1 cells)
+
+Checked against grids from other tasks it was not built from:
+
+MATCHES  InsideOutside7/train0_input:
+  1111111.33333..
+  1.....1.3.4.3..
+  1.4...143...3.4
+  1..4..1.3..43..
+  1.....1.34..34.
+  1111111.33333..
+
+MATCHES  InsideOutside7/train1_input:
+  .11111..23333..
+  .12221...3.23..
+  .1...12.23..3..
+  .12..1.2.32.3.2
+  .1.2.1...3..3..
+  .11111..23333..
+
+DOES NOT MATCH  InsideOutside7/train0_output:
+  11333

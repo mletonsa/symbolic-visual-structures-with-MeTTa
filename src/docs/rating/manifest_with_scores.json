@@ -1,0 +1,525 @@
+{
+  "InsideOutside_contains_000": {
+    "novelty_bucket": "trivial",
+    "novelty_verdict": "trivial",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [],
+    "shared_sym_y": [],
+    "is_degenerate": false,
+    "n_grids_checked": 32,
+    "n_grids_matched": 15,
+    "total_match_instances": 52,
+    "mdl_gain": 3618.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside4",
+    "source_task_b": "conceptarc__InsideOutside8"
+  },
+  "InsideOutside_contains_001": {
+    "novelty_bucket": "trivial",
+    "novelty_verdict": "trivial",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [],
+    "shared_sym_y": [],
+    "is_degenerate": false,
+    "n_grids_checked": 32,
+    "n_grids_matched": 15,
+    "total_match_instances": 36,
+    "mdl_gain": 2466.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside4",
+    "source_task_b": "conceptarc__InsideOutside7"
+  },
+  "InsideOutside_contains_002": {
+    "novelty_bucket": "trivial",
+    "novelty_verdict": "trivial",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [],
+    "shared_sym_y": [],
+    "is_degenerate": false,
+    "n_grids_checked": 32,
+    "n_grids_matched": 15,
+    "total_match_instances": 52,
+    "mdl_gain": 3618.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside1",
+    "source_task_b": "conceptarc__InsideOutside4"
+  },
+  "InsideOutside_contains_003": {
+    "novelty_bucket": "trivial",
+    "novelty_verdict": "trivial",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [],
+    "shared_sym_y": [],
+    "is_degenerate": false,
+    "n_grids_checked": 34,
+    "n_grids_matched": 16,
+    "total_match_instances": 42,
+    "mdl_gain": 2898.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside4",
+    "source_task_b": "conceptarc__InsideOutside5"
+  },
+  "InsideOutside_contains_004": {
+    "novelty_bucket": "trivial",
+    "novelty_verdict": "trivial",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [],
+    "shared_sym_y": [],
+    "is_degenerate": false,
+    "n_grids_checked": 36,
+    "n_grids_matched": 19,
+    "total_match_instances": 53,
+    "mdl_gain": 3690.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside10",
+    "source_task_b": "conceptarc__InsideOutside4"
+  },
+  "InsideOutside_contains_005": {
+    "novelty_bucket": "trivial",
+    "novelty_verdict": "trivial",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [],
+    "shared_sym_y": [],
+    "is_degenerate": false,
+    "n_grids_checked": 34,
+    "n_grids_matched": 17,
+    "total_match_instances": 39,
+    "mdl_gain": 2682.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside10",
+    "source_task_b": "conceptarc__InsideOutside4"
+  },
+  "InsideOutside_contains_006": {
+    "novelty_bucket": "trivial",
+    "novelty_verdict": "trivial",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [],
+    "shared_sym_y": [],
+    "is_degenerate": false,
+    "n_grids_checked": 34,
+    "n_grids_matched": 17,
+    "total_match_instances": 53,
+    "mdl_gain": 3690.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside4",
+    "source_task_b": "conceptarc__InsideOutside5"
+  },
+  "InsideOutside_contains_007": {
+    "novelty_bucket": "trivial",
+    "novelty_verdict": "trivial",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [],
+    "shared_sym_y": [],
+    "is_degenerate": false,
+    "n_grids_checked": 32,
+    "n_grids_matched": 15,
+    "total_match_instances": 39,
+    "mdl_gain": 2682.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside4",
+    "source_task_b": "conceptarc__InsideOutside5"
+  },
+  "InsideOutside_contains_008": {
+    "novelty_bucket": "novel_symmetry_only",
+    "novelty_verdict": "novel",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [],
+    "shared_sym_y": [
+      "d1",
+      "d2",
+      "h",
+      "rot180",
+      "rot90",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 32,
+    "n_grids_matched": 15,
+    "total_match_instances": 55,
+    "mdl_gain": 3834.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside5",
+    "source_task_b": "conceptarc__InsideOutside6"
+  },
+  "InsideOutside_contains_009": {
+    "novelty_bucket": "novel_symmetry_only",
+    "novelty_verdict": "novel",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [],
+    "shared_sym_y": [
+      "d1",
+      "d2",
+      "h",
+      "rot180",
+      "rot90",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 32,
+    "n_grids_matched": 14,
+    "total_match_instances": 28,
+    "mdl_gain": 1890.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside4",
+    "source_task_b": "conceptarc__InsideOutside5"
+  },
+  "InsideOutside_contains_010": {
+    "novelty_bucket": "novel_symmetry_only",
+    "novelty_verdict": "novel",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "shared_sym_y": [
+      "d1",
+      "d2",
+      "h",
+      "rot180",
+      "rot90",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 34,
+    "n_grids_matched": 16,
+    "total_match_instances": 45,
+    "mdl_gain": 3114.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside4",
+    "source_task_b": "conceptarc__InsideOutside5"
+  },
+  "InsideOutside_contains_011": {
+    "novelty_bucket": "novel_symmetry_only",
+    "novelty_verdict": "novel",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [],
+    "shared_sym_y": [
+      "d1",
+      "d2",
+      "h",
+      "rot180",
+      "rot90",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 38,
+    "n_grids_matched": 26,
+    "total_match_instances": 94,
+    "mdl_gain": 6642.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside10",
+    "source_task_b": "conceptarc__InsideOutside5"
+  },
+  "InsideOutside_contains_012": {
+    "novelty_bucket": "novel_symmetry_only",
+    "novelty_verdict": "novel",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [
+      "d1",
+      "d2",
+      "h",
+      "rot180",
+      "rot90",
+      "v"
+    ],
+    "shared_sym_y": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 34,
+    "n_grids_matched": 17,
+    "total_match_instances": 55,
+    "mdl_gain": 3834.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside10",
+    "source_task_b": "conceptarc__InsideOutside4"
+  },
+  "InsideOutside_contains_013": {
+    "novelty_bucket": "novel_symmetry_only",
+    "novelty_verdict": "novel",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "shared_sym_y": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 34,
+    "n_grids_matched": 23,
+    "total_match_instances": 90,
+    "mdl_gain": 6354.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside5",
+    "source_task_b": "conceptarc__InsideOutside7"
+  },
+  "InsideOutside_contains_014": {
+    "novelty_bucket": "novel_symmetry_only",
+    "novelty_verdict": "novel",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "shared_sym_y": [
+      "d1",
+      "d2",
+      "h",
+      "rot180",
+      "rot90",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 36,
+    "n_grids_matched": 24,
+    "total_match_instances": 80,
+    "mdl_gain": 5634.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside5",
+    "source_task_b": "conceptarc__InsideOutside7"
+  },
+  "InsideOutside_contains_015": {
+    "novelty_bucket": "novel_symmetry_only",
+    "novelty_verdict": "novel",
+    "n_fixed": 0,
+    "fixed_slots": [],
+    "shared_sym_x": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "shared_sym_y": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 36,
+    "n_grids_matched": 24,
+    "total_match_instances": 96,
+    "mdl_gain": 6786.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside10",
+    "source_task_b": "conceptarc__InsideOutside5"
+  },
+  "InsideOutside_contains_016": {
+    "novelty_bucket": "novel_with_scalar",
+    "novelty_verdict": "novel",
+    "n_fixed": 2,
+    "fixed_slots": [
+      "shapeY",
+      "sizeY"
+    ],
+    "shared_sym_x": [],
+    "shared_sym_y": [
+      "d1",
+      "d2",
+      "h",
+      "rot180",
+      "rot90",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 32,
+    "n_grids_matched": 0,
+    "total_match_instances": 0,
+    "mdl_gain": -126.0,
+    "mdl_worth_it": false,
+    "source_task_a": "conceptarc__InsideOutside4",
+    "source_task_b": "conceptarc__InsideOutside8"
+  },
+  "InsideOutside_contains_017": {
+    "novelty_bucket": "novel_with_scalar",
+    "novelty_verdict": "novel",
+    "n_fixed": 1,
+    "fixed_slots": [
+      "colorX"
+    ],
+    "shared_sym_x": [],
+    "shared_sym_y": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 34,
+    "n_grids_matched": 2,
+    "total_match_instances": 5,
+    "mdl_gain": 264.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside10",
+    "source_task_b": "conceptarc__InsideOutside4"
+  },
+  "InsideOutside_contains_018": {
+    "novelty_bucket": "novel_with_scalar",
+    "novelty_verdict": "novel",
+    "n_fixed": 1,
+    "fixed_slots": [
+      "colorX"
+    ],
+    "shared_sym_x": [],
+    "shared_sym_y": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 36,
+    "n_grids_matched": 3,
+    "total_match_instances": 11,
+    "mdl_gain": 732.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside10",
+    "source_task_b": "conceptarc__InsideOutside5"
+  },
+  "InsideOutside_contains_019": {
+    "novelty_bucket": "novel_with_scalar",
+    "novelty_verdict": "novel",
+    "n_fixed": 1,
+    "fixed_slots": [
+      "colorY"
+    ],
+    "shared_sym_x": [
+      "v"
+    ],
+    "shared_sym_y": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 36,
+    "n_grids_matched": 1,
+    "total_match_instances": 8,
+    "mdl_gain": 498.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside5",
+    "source_task_b": "conceptarc__InsideOutside8"
+  },
+  "InsideOutside_contains_020": {
+    "novelty_bucket": "novel_with_scalar",
+    "novelty_verdict": "novel",
+    "n_fixed": 1,
+    "fixed_slots": [
+      "sizeX"
+    ],
+    "shared_sym_x": [],
+    "shared_sym_y": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 32,
+    "n_grids_matched": 1,
+    "total_match_instances": 2,
+    "mdl_gain": 30.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside4",
+    "source_task_b": "conceptarc__InsideOutside5"
+  },
+  "InsideOutside_contains_021": {
+    "novelty_bucket": "novel_with_scalar",
+    "novelty_verdict": "novel",
+    "n_fixed": 2,
+    "fixed_slots": [
+      "colorX",
+      "colorY"
+    ],
+    "shared_sym_x": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "shared_sym_y": [
+      "h"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 32,
+    "n_grids_matched": 1,
+    "total_match_instances": 2,
+    "mdl_gain": 42.0,
+    "mdl_worth_it": true,
+    "source_task_a": "conceptarc__InsideOutside4",
+    "source_task_b": "conceptarc__InsideOutside5"
+  },
+  "InsideOutside_contains_022": {
+    "novelty_bucket": "novel_with_scalar",
+    "novelty_verdict": "novel",
+    "n_fixed": 2,
+    "fixed_slots": [
+      "shapeY",
+      "sizeY"
+    ],
+    "shared_sym_x": [
+      "h",
+      "rot180",
+      "v"
+    ],
+    "shared_sym_y": [
+      "d1",
+      "d2",
+      "h",
+      "rot180",
+      "rot90",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 32,
+    "n_grids_matched": 0,
+    "total_match_instances": 0,
+    "mdl_gain": -126.0,
+    "mdl_worth_it": false,
+    "source_task_a": "conceptarc__InsideOutside1",
+    "source_task_b": "conceptarc__InsideOutside10"
+  },
+  "InsideOutside_contains_023": {
+    "novelty_bucket": "novel_with_scalar",
+    "novelty_verdict": "novel",
+    "n_fixed": 2,
+    "fixed_slots": [
+      "shapeY",
+      "sizeY"
+    ],
+    "shared_sym_x": [],
+    "shared_sym_y": [
+      "d1",
+      "d2",
+      "h",
+      "rot180",
+      "rot90",
+      "v"
+    ],
+    "is_degenerate": false,
+    "n_grids_checked": 34,
+    "n_grids_matched": 0,
+    "total_match_instances": 0,
+    "mdl_gain": -126.0,
+    "mdl_worth_it": false,
+    "source_task_a": "conceptarc__InsideOutside1",
+    "source_task_b": "conceptarc__InsideOutside8"
+  }
+}

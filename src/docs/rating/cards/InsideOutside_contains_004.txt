@@ -1,0 +1,58 @@
+Concept card: InsideOutside_contains_004
+============================================================
+
+What this concept claims:
+  An object X contains an object Y. Nothing else is claimed beyond the relation itself.
+
+Built from:
+
+grid test1_input:
+  ..........9.
+  ..........9.
+  .8888888..9.
+  .8..99998.9.
+  .88.....88..
+  ..88.999.8..
+  ..88......8.
+  ..8.99999.8.
+  ..88.....88.
+  ...88888889.
+  ..........9.
+  ..........9.
+  (X is the cyan object with 28 cells)
+
+grid train2_output:
+  .3333333333333
+  .3....77.....3
+  .3...7.7.....3
+  .3..7..7.....3
+  .3.7....7....3
+  .37......7...3
+  .37..6....7..3
+  .37........7.3
+  .37.........73
+  .3777777777773
+  .3333333333333
+  ..............
+  (Y is the orange object with 4 cells)
+
+Checked against grids from other tasks it was not built from:
+
+MATCHES  InsideOutside7/train0_input:
+  1111111.33333..
+  1.....1.3.4.3..
+  1.4...143...3.4
+  1..4..1.3..43..
+  1.....1.34..34.
+  1111111.33333..
+
+MATCHES  InsideOutside7/train1_input:
+  .11111..23333..
+  .12221...3.23..
+  .1...12.23..3..
+  .12..1.2.32.3.2
+  .1.2.1...3..3..
+  .11111..23333..
+
+DOES NOT MATCH  InsideOutside7/train0_output:
+  11333

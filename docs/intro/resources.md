@@ -26,3 +26,9 @@ ArXiv: [The ConceptARC Benchmark: Evaluating Understanding and Generalization in
 ## MeTTa
 
 [MeTTa website](https://metta-lang.dev/)
+
+---
+
+You finished introduction.
+
+[Back to main page](../index.md)

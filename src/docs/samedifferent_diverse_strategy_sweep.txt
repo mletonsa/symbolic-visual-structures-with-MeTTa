@@ -1,0 +1,23 @@
+
+5/5 tasks have a sameShape-candidate: ['SameDifferent1', 'SameDifferent2', 'SameDifferent3', 'SameDifferent4', 'SameDifferent5']
+
+30 (held_out_task, source_pair) blend+coherence checks run [strategy=diverse]
+
+--- summary: SameDifferent / sameShape ---
+total blend+check runs: 30
+degenerate blends: 0 (0%)
+held-out grid match rate (non-degenerate blends only): 276/360 (77%)
+
+--- input vs output grid breakdown ---
+input grids:  174/180 (97%)
+output grids: 102/180 (57%)
+
+--- top 3 blends by MDL gain ---
+  SameDifferent5   SameDifferent1+SameDifferent2   matched 6/12, MDL gain 13924.0
+  SameDifferent5   SameDifferent1+SameDifferent3   matched 6/12, MDL gain 13924.0
+  SameDifferent5   SameDifferent1+SameDifferent4   matched 6/12, MDL gain 13924.0
+--- bottom 3 blends by MDL gain ---
+  SameDifferent1   SameDifferent3+SameDifferent4   matched 12/12, MDL gain 1276.0
+  SameDifferent1   SameDifferent3+SameDifferent5   matched 12/12, MDL gain 1276.0
+  SameDifferent1   SameDifferent4+SameDifferent5   matched 12/12, MDL gain 1276.0
+total wall time: 54.90917420387268
